@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 菜蟲老爸的追夢日記</title>
+    <link>https://BradyYang-tw.github.io/categories/</link>
+    <description>Recent content in Categories on 菜蟲老爸的追夢日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://BradyYang-tw.github.io/categories/blog/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://BradyYang-tw.github.io/categories/tech/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>投資理財</title>
+      <link>https://BradyYang-tw.github.io/categories/%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/categories/%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>美食生活</title>
+      <link>https://BradyYang-tw.github.io/categories/%E7%BE%8E%E9%A3%9F%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/categories/%E7%BE%8E%E9%A3%9F%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>育兒日常</title>
+      <link>https://BradyYang-tw.github.io/categories/%E8%82%B2%E5%85%92%E6%97%A5%E5%B8%B8/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/categories/%E8%82%B2%E5%85%92%E6%97%A5%E5%B8%B8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
