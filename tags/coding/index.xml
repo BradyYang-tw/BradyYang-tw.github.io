@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on 菜蟲老爸的追夢日記</title>
-    <link>https://BradyYang-tw.github.io/categories/tech/</link>
-    <description>Recent content in Tech on 菜蟲老爸的追夢日記</description>
+    <title>coding on 菜蟲老爸的追夢日記</title>
+    <link>https://BradyYang-tw.github.io/tags/coding/</link>
+    <description>Recent content in coding on 菜蟲老爸的追夢日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>還在思考要學習哪種程式語言嗎? 程式語言該如何選擇?</title>
       <link>https://BradyYang-tw.github.io/2022/06/14/learncode/</link>

@@ -2,22 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://BradyYang-tw.github.io/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/categories/blog/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://BradyYang-tw.github.io/categories/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://BradyYang-tw.github.io/2022/06/14/Hugo/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/tags/istio/</loc>
+    <loc>https://BradyYang-tw.github.io/tags/coding/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/post/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/tags/programming/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/</loc>
@@ -26,25 +20,10 @@
     <loc>https://BradyYang-tw.github.io/categories/tech/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://BradyYang-tw.github.io/categories/%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1/</loc>
+    <loc>https://BradyYang-tw.github.io/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://BradyYang-tw.github.io/categories/%E7%BE%8E%E9%A3%9F%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/2022/06/14/baby/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/2022/06/14/baby/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/2022/06/14/baby/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/2022/06/14/baby/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/categories/%E8%82%B2%E5%85%92%E6%97%A5%E5%B8%B8/</loc>
+    <loc>https://BradyYang-tw.github.io/2022/06/14/learncode/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/search/placeholder/</loc>

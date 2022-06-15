@@ -1,55 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 30歲才開始</title>
+    <title>Posts on 菜蟲老爸的追夢日記</title>
     <link>https://BradyYang-tw.github.io/post/</link>
-    <description>Recent content in Posts on 30歲才開始</description>
+    <description>Recent content in Posts on 菜蟲老爸的追夢日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo測試</title>
-      <link>https://BradyYang-tw.github.io/2022/06/14/Hugo/</link>
+      <title>還在思考要學習哪種程式語言嗎? 程式語言該如何選擇?</title>
+      <link>https://BradyYang-tw.github.io/2022/06/14/learncode/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://BradyYang-tw.github.io/2022/06/14/Hugo/</guid>
-      <description>測試一下</description>
-    </item>
-    
-    <item>
-      <title>育兒</title>
-      <link>https://BradyYang-tw.github.io/2022/06/14/baby/</link>
-      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/2022/06/14/baby/</guid>
-      <description>測試一下</description>
-    </item>
-    
-    <item>
-      <title>育兒</title>
-      <link>https://BradyYang-tw.github.io/2022/06/14/baby/</link>
-      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/2022/06/14/baby/</guid>
-      <description>測試一下</description>
-    </item>
-    
-    <item>
-      <title>育兒</title>
-      <link>https://BradyYang-tw.github.io/2022/06/14/baby/</link>
-      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/2022/06/14/baby/</guid>
-      <description>測試一下</description>
-    </item>
-    
-    <item>
-      <title>育兒</title>
-      <link>https://BradyYang-tw.github.io/2022/06/14/baby/</link>
-      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/2022/06/14/baby/</guid>
-      <description>測試一下</description>
+      <guid>https://BradyYang-tw.github.io/2022/06/14/learncode/</guid>
+      <description>為什麼要學程式語言? 撰寫程式語言(Coding / Programming)已經逐漸成為全民運動，但是在學習任何東西之前，都必須要問自己學習的目</description>
     </item>
     
   </channel>
