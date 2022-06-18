@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://BradyYang-tw.github.io/categories/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/tags/coding/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/post/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/tags/programming/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/tags/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/categories/tech/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/2022/06/14/learncode/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/search/placeholder/</loc>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/top/about/</loc>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/top/books/</loc>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/top/archive/</loc>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/search/</loc>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/top/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://BradyYang-tw.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://BradyYang-tw.github.io/zh/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>
