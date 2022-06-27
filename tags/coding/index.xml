@@ -6,7 +6,16 @@
     <description>Recent content in coding on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Side Project實作-個人網站</title>
+      <link>https://BradyYang-tw.github.io/portfolio/</link>
+      <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/portfolio/</guid>
+      <description>個人網站 https://bradyyang-tw.github.io/portfolio/</description>
+    </item>
+    
     <item>
       <title>成為軟體工程師第一步</title>
       <link>https://BradyYang-tw.github.io/2022/06/14/learncode/</link>

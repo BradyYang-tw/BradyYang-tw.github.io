@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Brady Yang&#39;s DevLife">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://BradyYang-tw.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://BradyYang-tw.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="透過費曼技巧，讓學習事半功倍" />
+    <meta property="og:title" content="透過費曼技巧，讓學習事半功倍" />
+    <meta property="twitter:title" content="透過費曼技巧，讓學習事半功倍" />
+    
+
+    
+    <meta name="description" content="學無止盡，世上有太多我們不懂得事情需要學習，若是無法將所學化作自己的養分而將其遺忘，這是非常可惜的">
+    <meta property="og:description" content="學無止盡，世上有太多我們不懂得事情需要學習，若是無法將所學化作自己的養分而將其遺忘，這是非常可惜的" />
+    <meta property="twitter:description" content="學無止盡，世上有太多我們不懂得事情需要學習，若是無法將所學化作自己的養分而將其遺忘，這是非常可惜的" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Brady Yang DevLife, Brady Yang, HsinYu Yang, Brady, 想成為軟體工程師">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>透過費曼技巧，讓學習事半功倍 | Brady Yang&#39;s DevLife</title>
+
+    <link rel="canonical" href="/2022/06/27/learncode/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Brady Yang&#39;s DevLife</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/devlife">devlife</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/projects">projects</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/books/">BOOKS</a></li>
+                    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/thought-catalog-505eectW54k-unsplash.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E8%B2%BB%E6%9B%BC%E6%8A%80%E5%B7%A7" title="費曼技巧">
+                            費曼技巧
+                        </a>
+                        
+                        <a class="tag" href="/tags/feynmans-technique" title="Feynman’s technique">
+                            Feynman’s technique
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E5%AD%B8%E7%BF%92%E6%8A%80%E5%B7%A7" title="學習技巧">
+                            學習技巧
+                        </a>
+                        
+                    </div>
+                    <h1>透過費曼技巧，讓學習事半功倍</h1>
+                    <h2 class="subheading">試著別透過短期記憶來學習，你會走得更遠</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    &#34;Brady Yang&#34;
+                             
+                            on 
+                            Monday, June 27, 2022
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h1 id="費曼技巧">費曼技巧</h1>
+<p>不知道大家有沒有這樣的經驗，就是當我們在學習任何事情時，我們容易以結果為導向。當看到想要的結果實現，就認為自己已經會了。
+直到某天有人向你請教時，卻發現那些你認為你已經會的東西，都需要再花時間重新檢視、驗證以確保你不會誤人子弟。
+上述的這段過程，其實你已經再使用費曼學習技巧。</p>
+<p>費曼全名為(Richard Feynman)，是一位著名的物理學家。
+其針對學習提供了一些簡單卻相當有效的學習方法，透過分享與教學，讓大腦由被動接受轉為主動創造，加深記憶，轉換成為內在的知識並透過長期記憶牢牢記住。</p>
+<h2 id="費曼技巧為以下四步驟">費曼技巧為以下四步驟：</h2>
+<h2 id="1-確定主題">1. 確定主題</h2>
+<p>首先，我們要先選擇一個我們想要學習的目標。例如：你想要學習如何透過爬蟲抓取文章、你想要學習如何建立網站等。
+這個目標的大小不重要，在選擇好目標後，開始針對這個目標專注的學習。</p>
+<h2 id="2-想像你要教一個完全不懂這領域的人">2. 想像你要教一個完全不懂這領域的人</h2>
+<p>在你針對目標學習一段時間後，試著將你所學到的知識傳授給一個小朋友。</p>
+<p>這裡想表達的是，我們常常在學習某個領域知識時，都會一直講該領域的專有名詞。比如：類別、爬蟲、標籤、屬性等。
+有時候，其實連你都說不清楚這些是甚麼東西更何況是完全沒接觸過的小朋友。
+因此你必須試著用他們聽得懂的話來描述。</p>
+<h2 id="3-重學">3. 重學</h2>
+<p>在上一個過程中，你可能會意識到某些部分你很容易忘記，或無法解釋清楚。
+這時你必須針對這些問題重新學習，直到你可以清楚的讓別人理解此概念。</p>
+<p>這一步才是學習上最有價值的部分，透過教導讓自己明白自己的不足之處，好讓自己能夠真的理解。</p>
+<h2 id="4-簡單化比喻">4. 簡單化比喻</h2>
+<p>最後，若能用簡單的比喻來解釋。那麼就說明你真的理解了這個概念。
+這也是讓你成為大師等級的關鍵步驟。</p>
+<h2 id="結論">結論</h2>
+<p>這所謂施比受更有福，其實在教人的過程中，也是在驗證自己是否真的都懂了。
+這種學習非常高效，很少浪費時間，重點是可以將所學成為長期記憶。往後我都會使用費曼技巧來學習，並將學到的知識教導給大家。</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/portfolio/" data-toggle="tooltip" data-placement="top" title="Side Project實作-個人網站">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/coding" title="coding">
+                            coding
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/programming" title="programming">
+                            programming
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E6%88%90%E7%82%BA%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="小白也能成為工程師">
+                            小白也能成為工程師
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:punk6233@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/BradyYang-tw">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Brady Yang&#39;s DevLife" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Brady Yang&#39;s DevLife 2022
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-J6JC6GS9P9', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
