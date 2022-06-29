@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Brady Yang&#39;s Home</title>
+    <title>Tags on Brady Yang&#39;s DevLife</title>
     <link>https://BradyYang-tw.github.io/tags/</link>
-    <description>Recent content in Tags on Brady Yang&#39;s Home</description>
+    <description>Recent content in Tags on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS</title>
+      <link>https://BradyYang-tw.github.io/tags/css/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Front-end</title>
+      <link>https://BradyYang-tw.github.io/tags/front-end/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/tags/front-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>https://BradyYang-tw.github.io/tags/html/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://BradyYang-tw.github.io/tags/javascript/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端工程師</title>
+      <link>https://BradyYang-tw.github.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Feynman’s technique</title>
       <link>https://BradyYang-tw.github.io/tags/feynmans-technique/</link>
@@ -40,15 +85,6 @@
       <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/tags/coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Front-End</title>
-      <link>https://BradyYang-tw.github.io/tags/front-end/</link>
-      <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/tags/front-end/</guid>
       <description></description>
     </item>
     

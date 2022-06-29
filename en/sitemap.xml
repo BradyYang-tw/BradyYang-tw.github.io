@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://BradyYang-tw.github.io/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://BradyYang-tw.github.io/categories/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -28,17 +28,26 @@
                 href="https://BradyYang-tw.github.io/categories/"
                 />
   </url><url>
-    <loc>https://BradyYang-tw.github.io/categories/devlife/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <loc>https://BradyYang-tw.github.io/tags/css/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://BradyYang-tw.github.io/tags/feynmans-technique/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <loc>https://BradyYang-tw.github.io/categories/devlife/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/tags/front-end/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/tags/html/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/tags/javascript/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/post/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -50,6 +59,15 @@
                 href="https://BradyYang-tw.github.io/tags/"
                 />
   </url><url>
+    <loc>https://BradyYang-tw.github.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/frontend/Day1/</loc>
+    <lastmod>2022-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/tags/feynmans-technique/</loc>
+    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://BradyYang-tw.github.io/tags/%E5%AD%B8%E7%BF%92%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-06-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -60,9 +78,6 @@
     <lastmod>2022-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/coding/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://BradyYang-tw.github.io/tags/front-end/</loc>
     <lastmod>2022-06-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/programming/</loc>
