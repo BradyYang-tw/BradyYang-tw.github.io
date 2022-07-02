@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on Brady Yang&#39;s DevLife</title>
+    <link>https://BradyYang-tw.github.io/categories/vue/</link>
+    <description>Recent content in Vue on Brady Yang&#39;s DevLife</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>手把手用Vue建立第一個網站</title>
+      <link>https://BradyYang-tw.github.io/vue/Day1/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/vue/Day1/</guid>
+      <description>三大框架之一，用Vue快速建立自己的網站 什麼是Vue Vue是前端開發框架。透過Vue可以讓開發者輕鬆建置網站、路由、狀態管理及http请求等</description>
+    </item>
+    
+  </channel>
+</rss>

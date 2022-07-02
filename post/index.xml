@@ -6,14 +6,23 @@
     <description>Recent content in Posts on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>手把手用Vue建立第一個網站</title>
+      <link>https://BradyYang-tw.github.io/vue/Day1/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/vue/Day1/</guid>
+      <description>三大框架之一，用Vue快速建立自己的網站 什麼是Vue Vue是前端開發框架。透過Vue可以讓開發者輕鬆建置網站、路由、狀態管理及http请求等</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day3</title>
       <link>https://BradyYang-tw.github.io/frontend/Day3/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/frontend/Day3/</guid>
-      <description>三個步驟使用HTML建立自己的第一個網頁 HTML是什麼? 在建立網頁之前，還是要向大家介紹一下HTML。 HTML全名為HyperText Markup La</description>
+      <description>我將帶你認識HTML，並使用HTML打造第一個網頁。 三個步驟使用HTML建立自己的第一個網頁 HTML是什麼? 在建立網頁之前，還是要向大家介紹</description>
     </item>
     
     <item>
@@ -22,7 +31,7 @@
       <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/frontend/Day2/</guid>
-      <description>決定要當個前端工程師，但是要怎麼開始? 首先，很開心大家加入前端工程師的行列，不過各位是否發現到一個問題，我要在哪邊開始寫程式呢? 總不可能拿著</description>
+      <description>工欲善其事，必先利其器。要開始學習前端工程師的技能，首先就是建立開發環境，以提升自己的工作效率。 決定要當個前端工程師，但是要怎麼開始? 首先，</description>
     </item>
     
     <item>
@@ -31,16 +40,16 @@
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/frontend/Day1/</guid>
-      <description>甚麼是前端工程師? 在成為前端工程師之前，我們必須先理解「前端」是甚麼意思。 就軟體開發的領域來說，若使用者可以直接看到你的開發成果那麼就稱為前</description>
+      <description>想轉職成為前端工程師之前，你必須了解何謂前端工程師，是否與你心中所想的是一樣的，才不會浪費時間走歪路。 甚麼是前端工程師? 在成為前端工程師之前</description>
     </item>
     
     <item>
-      <title>透過費曼技巧，讓學習事半功倍</title>
+      <title>費曼技巧，讓學習事半功倍</title>
       <link>https://BradyYang-tw.github.io/2022/06/27/learncode/</link>
       <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/2022/06/27/learncode/</guid>
-      <description>費曼技巧 不知道大家有沒有這樣的經驗，就是當我們在學習任何事情時，我們容易以結果為導向。當看到想要的結果實現，就認為自己已經會了。 直到某天有人</description>
+      <description>學無止盡，世上有太多我們不懂得事情需要學習，但若投入時間，卻無法將所學化作自己的養分而將其遺忘，這是非常可惜的。 費曼技巧 不知道大家有沒有這樣</description>
     </item>
     
     <item>
@@ -58,7 +67,7 @@
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/2022/06/15/learncode/</guid>
-      <description>決定要來學習撰寫程式，但是要怎麼開始? 首先，很開心大家也要加入Coding的行列了，不過大家是否發現到一個嚴重的問題，我要在哪邊開始寫程式呢</description>
+      <description>工欲善其事，必先利其器。要開始學習撰寫程式前，首先就是建立開發環境，以提升自己的工作效率。 決定要來學習撰寫程式，但是要怎麼開始? 首先，很開心</description>
     </item>
     
     <item>
@@ -67,7 +76,7 @@
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/2022/06/14/learncode/</guid>
-      <description>程式語言的選擇 想要成為一位軟體工程師一定會碰到的問題就是我要選擇哪個程式語言，本篇將會針對此問題分享幾個觀點，希望看完這篇文章對大家在選擇程</description>
+      <description>還在思考要學習哪種程式語言嗎?給想學程式的朋友們一些建議 程式語言的選擇 想要成為一位軟體工程師一定會碰到的問題就是我要選擇哪個程式語言，本篇將</description>
     </item>
     
   </channel>
