@@ -6,7 +6,16 @@
     <description>Recent content on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day3</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day3/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day3/</guid>
+      <description>三個步驟使用HTML建立自己的第一個網頁 HTML是什麼? 在建立網頁之前，還是要向大家介紹一下HTML。 HTML全名為HyperText Markup La</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day2</title>
       <link>https://BradyYang-tw.github.io/frontend/Day2/</link>
@@ -41,6 +50,15 @@
       
       <guid>https://BradyYang-tw.github.io/portfolio/</guid>
       <description>個人網站 https://bradyyang-tw.github.io/portfolio/</description>
+    </item>
+    
+    <item>
+      <title>新手工程師第一堂課：決定要來學習撰寫程式，但是要怎麼開始?</title>
+      <link>https://BradyYang-tw.github.io/2022/06/15/learncode/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/2022/06/15/learncode/</guid>
+      <description>決定要來學習撰寫程式，但是要怎麼開始? 首先，很開心大家也要加入Coding的行列了，不過大家是否發現到一個嚴重的問題，我要在哪邊開始寫程式呢</description>
     </item>
     
     <item>

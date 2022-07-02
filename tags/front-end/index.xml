@@ -6,7 +6,16 @@
     <description>Recent content in Front-end on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day3</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day3/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day3/</guid>
+      <description>三個步驟使用HTML建立自己的第一個網頁 HTML是什麼? 在建立網頁之前，還是要向大家介紹一下HTML。 HTML全名為HyperText Markup La</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day2</title>
       <link>https://BradyYang-tw.github.io/frontend/Day2/</link>
@@ -23,15 +32,6 @@
       
       <guid>https://BradyYang-tw.github.io/frontend/Day1/</guid>
       <description>甚麼是前端工程師? 在成為前端工程師之前，我們必須先理解「前端」是甚麼意思。 就軟體開發的領域來說，若使用者可以直接看到你的開發成果那麼就稱為前</description>
-    </item>
-    
-    <item>
-      <title>Side Project實作-個人網站</title>
-      <link>https://BradyYang-tw.github.io/portfolio/</link>
-      <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/portfolio/</guid>
-      <description>個人網站 https://bradyyang-tw.github.io/portfolio/</description>
     </item>
     
   </channel>
