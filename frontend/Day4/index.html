@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day3" />
-    <meta property="og:title" content="成為前端工程師-Day3" />
-    <meta property="twitter:title" content="成為前端工程師-Day3" />
+    <meta name="title" content="成為前端工程師-Day4" />
+    <meta property="og:title" content="成為前端工程師-Day4" />
+    <meta property="twitter:title" content="成為前端工程師-Day4" />
     
 
     
-    <meta name="description" content="我將帶你認識HTML，並使用HTML打造第一個網頁。">
-    <meta property="og:description" content="我將帶你認識HTML，並使用HTML打造第一個網頁。" />
-    <meta property="twitter:description" content="我將帶你認識HTML，並使用HTML打造第一個網頁。" />
+    <meta name="description" content="學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。">
+    <meta property="og:description" content="學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。" />
+    <meta property="twitter:description" content="學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>成為前端工程師-Day3 | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day4 | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day3/">
+    <link rel="canonical" href="/frontend/Day4/">
 
     
     
@@ -211,7 +211,7 @@
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day3</h1>
+                    <h1>成為前端工程師-Day4</h1>
                     <h2 class="subheading">前端工程師養成</h2>
                     <span class="meta">
                         
@@ -220,7 +220,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Friday, July 1, 2022
+                            Wednesday, July 6, 2022
                             
                             
                             
@@ -246,65 +246,97 @@
                 post-container">
 
                 
-                <p>我將帶你認識HTML，並使用HTML打造第一個網頁。</p>
-<h1 id="三個步驟使用html建立自己的第一個網頁">三個步驟使用HTML建立自己的第一個網頁</h1>
-<h2 id="html是什麼">HTML是什麼?</h2>
-<p>在建立網頁之前，還是要向大家介紹一下HTML。
-HTML全名為HyperText Markup Language(超文本標記語言)，主要是用來建立網站內容及網站架構的標準語言。</p>
-<p>簡單來說，HTML是建立網站的基本，瀏覽器會根據HTML內的標籤來呈現相對應的內容。
-那就廢話不多說，馬上開始我們的三個步驟。</p>
+                <p>學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。</p>
+<h1 id="開始撰寫html">開始撰寫HTML</h1>
+<p>在<a href="https://bradyyang-tw.github.io/frontend/Day3/">Day3</a>，我們建立了一個index.html，並透過瀏覽器呈現My First Website。
+但這只是單純的顯示文字內容而已，若要讓HTML更佳豐富，我們就得認識HTML標籤。</p>
+<h2 id="html標籤">HTML標籤</h2>
+<p>HTML標籤，通常以成對的標籤表示。</p>
 <blockquote>
-<p>我們會在下次介紹標籤是什麼，以及常用的標籤有哪些</p>
+<p>少數的標籤是不需要成對出現的，比如 <code>&lt;br&gt;</code>、<code>&lt;img&gt;</code>等。英文稱作empty elements。</p>
 </blockquote>
-<h3 id="第一步建立一個資料夾">第一步：建立一個資料夾</h3>
-<p>首先，建立一個名為project的資料夾來存放我們之後撰寫的檔案。
-接著，開啟我們的IDE(Visual Studio Code)並點擊左側的「Open Folder」並選擇剛剛建立好的資料夾路徑。
+<pre tabindex="0"><code>&lt;tag&gt;要呈現的內容&lt;/tag&gt;
+</code></pre><blockquote>
+<p>注意第2個tag前面多了一個斜線</p>
+</blockquote>
+<p>讓我們來看看同樣的內容，使用tag的前後差異。
 
-  <img src="https://i.imgur.com/55NEUDI.png" alt="">
-
-</p>
-<p>還不知道IDE的朋友可以先閱讀<a href="https://bradyyang-tw.github.io/frontend/Day2/">上一篇</a> 。</p>
-<h3 id="第二步建立indexhtml">第二步：建立index.html</h3>
-<p>打開IDE後讓我們先建立一個Index.html的檔案。有兩種方式可以建立：</p>
-<ol>
-<li>左上方File &gt; New File</li>
-<li>滑鼠左鍵對著內容點兩下</li>
-</ol>
-<p>
-  <img src="https://i.imgur.com/vcx5o3h.png" alt="">
+  <img src="https://i.imgur.com/G5p3uHH.png" alt="">
 
 </p>
-<p>之後你會看到一個新的File被建立出來
+<p>有沒有發現不同標籤字體大小及粗體都不相同。這是HTML賦予這幾個標籤的基本的樣式。</p>
+<table>
+<thead>
+<tr>
+<th>標籤</th>
+<th>意思</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h1</td>
+<td>標題1 ，通常一個網站只會使用一個h1標籤代表最重要的標題</td>
+</tr>
+<tr>
+<td>h2</td>
+<td>標題2</td>
+</tr>
+<tr>
+<td>h3</td>
+<td>標題3</td>
+</tr>
+<tr>
+<td>p</td>
+<td>段落</td>
+</tr>
+</tbody>
+</table>
+<p>你可以把標籤想成Word裡的樣式。不同樣式，都會讓內容產生不同效果。
 
-  <img src="https://i.imgur.com/pryFtqk.png" alt="">
-
-</p>
-<p>接著你可以在上面寫一些內容，比如：My First Website。寫完後將其存檔至剛剛建立的project資料夾，並將檔案命名為index.html。
-這邊副檔名為.html，其目的是為了讓瀏覽器知道這是html檔，以供瀏覽器閱讀。
-
-  <img src="https://i.imgur.com/TxuB4r5.png" alt="">
-
-
-
-  <img src="https://i.imgur.com/SH4n3kE.png" alt="">
+  <img src="https://i.imgur.com/xTiTJ1T.png" alt="">
 
 </p>
 <blockquote>
-<p>為什麼要命名為index.html?</p>
-<blockquote>
-<p>index為索引的意思，顧名思義index.html被公認為網頁的入口/首頁。當你今天沒有特別指定要到哪個頁面時，就會進到index.html頁面。</p>
+<p>除了上述幾個的標籤外，還有很多實用的標籤。可以參考<a href="https://www.w3schools.com/tags/ref_byfunc.asp">此網站</a> 。
+雖然有很多標籤，但大家也不用緊張，隨著實作練習越來越多，慢慢的就會知道要使用哪些標籤了。</p>
 </blockquote>
-</blockquote>
-<h3 id="第三步透過瀏覽器開啟indexhtml">第三步：透過瀏覽器開啟index.html</h3>
-<p>你可以透過瀏覽器打開index.html。若有看到My First Website的話。
-恭喜你，你已經完成了你的第一個網頁。
+<h2 id="建立html環境">建立HTML環境</h2>
+<p>雖然我們可以直接將內容就寫在html檔案，但HTML的撰寫是有基本格式。要照著基本格式寫，網頁才不會出錯。
+以下為基本的HTML格式，
+主要由<code>&lt;html&gt;</code>、<code>&lt;head&gt;</code>及<code>&lt;body&gt;</code>三個標籤組成。</p>
+<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Brady的網頁&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;標題1&lt;/h1&gt;
+  &lt;h2&gt;標題2&lt;/h2&gt;
+  &lt;h3&gt;標題3&lt;/h3&gt;
+  &lt;p&gt;段落&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><ul>
+<li>
+<p><code>&lt;!DOCTYPE html&gt;</code> 主要是告訴瀏覽器此文件是由HTML5撰寫。</p>
+</li>
+<li>
+<p><code>&lt;html&gt;</code> 每個HTML都是由此標籤開始，裡面在放<code>&lt;head&gt;</code>、<code>&lt;body&gt;</code>兩個標籤。</p>
+</li>
+<li>
+<p><code>&lt;head&gt;</code> 主要是儲存網頁的重要資訊。像是範例裡的<code>&lt;title&gt;</code>主要是顯示瀏覽器頁籤上的標題。
 
-  <img src="https://i.imgur.com/XUPfYk2.png" alt="">
+  <img src="https://i.imgur.com/PYfWqkt.png" alt="">
 
 </p>
+</li>
+<li>
+<p><code>&lt;body&gt;</code> 主要是放網站的要呈現的內容。像先前我們介紹的<code>&lt;h1&gt;</code>、<code>&lt;p&gt;</code>等標籤。</p>
+</li>
+</ul>
 <h2 id="總結">總結</h2>
-<p>你可能覺得目前這個網頁好單調，只能顯示文字一點都不漂亮。
-先不要著急，後續我會教你如何透過標籤(Element)讓畫面更加美觀。</p>
+<p>今天我們學到了HTML正確的格式，也學到了HTML標籤的使用。
+下一次會在介紹更多常用的HTML標籤唷。</p>
 
 
                 
@@ -313,15 +345,10 @@ HTML全名為HyperText Markup Language(超文本標記語言)，主要是用來�
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/frontend/Day2/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day2">&larr;
+                        <a href="/vue/Day1/" data-toggle="tooltip" data-placement="top" title="手把手用Vue建立第一個網站">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/vue/Day1/" data-toggle="tooltip" data-placement="top" title="手把手用Vue建立第一個網站">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

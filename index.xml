@@ -6,7 +6,16 @@
     <description>Recent content on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day4</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day4/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day4/</guid>
+      <description>學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。 開始撰寫HTML 在Day3，我們建立了一個index.html，並透過瀏覽器呈</description>
+    </item>
+    
     <item>
       <title>手把手用Vue建立第一個網站</title>
       <link>https://BradyYang-tw.github.io/vue/Day1/</link>
