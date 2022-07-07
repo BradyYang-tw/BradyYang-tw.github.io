@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="Side Project實作-個人網站" />
-    <meta property="og:title" content="Side Project實作-個人網站" />
-    <meta property="twitter:title" content="Side Project實作-個人網站" />
+    <meta name="title" content="成為前端工程師-Day5" />
+    <meta property="og:title" content="成為前端工程師-Day5" />
+    <meta property="twitter:title" content="成為前端工程師-Day5" />
     
 
     
-    <meta name="description" content="Side Project實作-個人網站">
-    <meta property="og:description" content="Side Project實作-個人網站" />
-    <meta property="twitter:description" content="Side Project實作-個人網站" />
+    <meta name="description" content="本篇將介紹身為前端工程師，你一定要知道的幾個HTML標籤。">
+    <meta property="og:description" content="本篇將介紹身為前端工程師，你一定要知道的幾個HTML標籤。" />
+    <meta property="twitter:description" content="本篇將介紹身為前端工程師，你一定要知道的幾個HTML標籤。" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>Side Project實作-個人網站 | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day5 | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/portfolio/">
+    <link rel="canonical" href="/frontend/Day5/">
 
     
     
@@ -178,7 +178,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/thought-catalog-505eectW54k-unsplash.jpg')
+        background-image: url('/img/devship.jpg')
     }
 </style>
 
@@ -190,13 +190,29 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/side-project" title="Side Project">
-                            Side Project
+                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="前端工程師">
+                            前端工程師
+                        </a>
+                        
+                        <a class="tag" href="/tags/front-end" title="Front-end">
+                            Front-end
+                        </a>
+                        
+                        <a class="tag" href="/tags/javascript" title="Javascript">
+                            Javascript
+                        </a>
+                        
+                        <a class="tag" href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        <a class="tag" href="/tags/css" title="CSS">
+                            CSS
                         </a>
                         
                     </div>
-                    <h1>Side Project實作-個人網站</h1>
-                    <h2 class="subheading">Side Project</h2>
+                    <h1>成為前端工程師-Day5</h1>
+                    <h2 class="subheading">前端工程師養成</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -204,7 +220,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Saturday, June 25, 2022
+                            Wednesday, July 6, 2022
                             
                             
                             
@@ -230,8 +246,121 @@
                 post-container">
 
                 
-                <h1 id="個人網站">個人網站</h1>
-<p><a href="https://bradyyang-tw.github.io/portfolio/">https://bradyyang-tw.github.io/portfolio/</a></p>
+                <p>本篇將介紹身為前端工程師，你一定要知道的幾個HTML標籤。</p>
+<h1 id="常用的html標籤">常用的HTML標籤</h1>
+<p>根據<a href="https://bradyyang-tw.github.io/frontend/Day4/">上一篇</a> HTML基本格式，來向大家介紹使用於<code>&lt;head&gt;</code> 及 <code>&lt;body&gt;</code>常用的幾個標籤。</p>
+<h2 id="head內常用的標籤">head內常用的標籤</h2>
+<h3 id="1-title-標題">1. title 標題</h3>
+<p>title為一個HTML文件裡面不可或缺的標籤，其有幾個功能：</p>
+<ul>
+<li>瀏覽器上的網頁頁籤，會顯示title。</li>
+<li>當使用者將網頁加入我的最愛時，會預設為title。</li>
+<li>搜尋引擎的結果，會顯示title。</li>
+</ul>
+<pre tabindex="0"><code>&lt;head&gt;
+  &lt;title&gt;我的網站&lt;/title&gt;
+&lt;/head&gt;
+</code></pre><h3 id="2-meta">2. meta</h3>
+<p>meta 又稱作matadata，主要用來定義HTML文件裡面的細部資訊。以下舉兩個為例：</p>
+<ul>
+<li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> 透過屬性chartset，定義HTML文件為UTF-8編碼。</li>
+<li><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code> 透過屬性name及content，讓網頁可以適用於不同螢幕尺寸的裝置。</li>
+</ul>
+<blockquote>
+<p>屬性這個用法目前大家是第一次看到，根據HTML標籤的不同，可以使用的屬性也不同。
+使用屬性的方式就是在第1個標籤內加入屬性的設定，如：<code>charset=&quot;UTF-8&quot;</code> 。</p>
+</blockquote>
+<pre tabindex="0"><code>&lt;head&gt;
+  &lt;title&gt;我的網站&lt;/title&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+&lt;/head&gt;
+</code></pre><h2 id="body內常用的標籤">body內常用的標籤</h2>
+<h3 id="1-h1-h6-標題">1. h1-h6 標題</h3>
+<p>h的全名是heading，為HTML預設的標題樣式。根據標題的重要性，依序為<code>&lt;h1&gt;</code>到<code>&lt;h6&gt;</code>。</p>
+<p><code>&lt;h1&gt;</code>通常一個網頁裡面只會有一個h1，代表最重要的標題或是網頁的主題。<br>
+<code>&lt;h2&gt;</code>為網頁裡面最常使用的標題。</p>
+<blockquote>
+<p>在使用標題時，通常會依序使用，不會突然從<code>&lt;h2&gt;</code>跳到<code>&lt;h4&gt;</code>。</p>
+</blockquote>
+<h3 id="2-p-段落">2. p 段落</h3>
+<p>p的全名是paragraph，為HTML預設的段落樣式。
+我們撰寫網頁的內容，可以用<code>&lt;p&gt;</code>來呈現。</p>
+<h3 id="3-a-超連結">3. a 超連結</h3>
+<p>a標籤為超連結，我們可以透過屬性<code>href</code>來顯示要呈現的連結。</p>
+<pre tabindex="0"><code>&lt;a href=&#34;https://bradyyang-tw.github.io/&#34;&gt;Brady Yang的網站&lt;/a&gt;
+</code></pre><iframe height="300" style="width: 100%;" scrolling="no" title="標籤a介紹" src="https://codepen.io/bradyyang-tw/embed/wvmMxvx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/wvmMxvx">
+  標籤a介紹</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3 id="4-img-圖片">4. img 圖片</h3>
+<p>img標籤為圖片，我們可以透過屬性<code>src</code>來顯示要呈現的圖片。</p>
+<pre tabindex="0"><code>&lt;img src=&#34;https://bradyyang-tw.github.io/img/HsinYu.png&#34; alt=&#34;Brady&#34; width=&#34;500&#34; height=&#34;600&#34;&gt;
+</code></pre><iframe height="300" style="width: 100%;" scrolling="no" title="標籤img介紹" src="https://codepen.io/bradyyang-tw/embed/vYRLaNe?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/vYRLaNe">
+  標籤img介紹</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>根據範例可以發現，<code>&lt;img&gt;</code>標籤內除了<code>src</code>屬性外，還有<code>alt</code>、<code>width</code>、<code>height</code>。</p>
+<ul>
+<li><code>alt</code> 當圖片路徑失效時，會顯示該文字。</li>
+<li><code>width</code> 圖片寬度。</li>
+<li><code>height</code> 圖片高度。</li>
+</ul>
+<h3 id="5-olulli-列表">5. ol、ul、li 列表</h3>
+<p>ol 的全名是ordered list，顧名思義就是有排序的列表。反之，當然就也會有無排序的列表，即ul。全名為unordered list。
+li 全名為list。</p>
+<p>透過以下範例，讓我們了解<code>&lt;ol&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;li&gt;</code>的使用方式。首先，使用<code>&lt;ol&gt;</code>或<code>&lt;ul&gt;</code>告訴瀏覽器要呈現甚麼樣的的列表，接著透過<code>&lt;li&gt;</code>將所有列表列出來。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="list介紹" src="https://codepen.io/bradyyang-tw/embed/MWVKBpY?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/MWVKBpY">
+  list介紹</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3 id="6-tabletrthtd-表格">6. table、tr、th、td 表格</h3>
+<p>table即為表格的意思。tr為table row，代表表格的每一列。th為table header代表表格標題，在HTML預設為粗體置中。
+td為table data代表表格內容，在HTML預設為置左。</p>
+<p>透過以下範例，讓我們了解<code>&lt;table&gt;</code>、<code>&lt;tr&gt;</code>、<code>&lt;th&gt;</code>、<code>&lt;td&gt;</code>的使用方式。
+首先，使用<code>&lt;table&gt;</code>告訴瀏覽器要呈現表格。由於表格是一列一列的，所以我們透過<code>&lt;tr&gt;</code>，並根據要呈現的內容是什麼來決定要在<code>&lt;tr&gt;</code>裡面放什麼。
+若是要放表格的標題就用<code>&lt;th&gt;</code>；若要放資料，就用<code>&lt;td&gt;</code>。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="table介紹" src="https://codepen.io/bradyyang-tw/embed/KKoVBZP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/KKoVBZP">
+  table介紹</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<blockquote>
+<p>若大家在練習表格時，可能會發現並沒有表格的線條。那是因為雖然照著表格排列，但目前並沒有設定線條樣式。
+若要設定線條樣式，就要透過CSS來做設定，這個之後會再向大家介紹。</p>
+</blockquote>
+<blockquote>
+<p>在表格上也可以使用這些標籤 <code>&lt;caption&gt;</code>、<code>&lt;colgroup&gt;</code>、<code>&lt;thead&gt;</code>、<code>&lt;tfoot&gt;</code> 及 <code>&lt;tbody&gt;</code>。</p>
+</blockquote>
+<h3 id="7-div-區塊">7. div 區塊</h3>
+<p>div 的全名為division，主要使用於網頁排版時，可以透過<code>&lt;div&gt;</code>定義網頁裡面特定位置要呈現什麼內容。
+以下範例透過CSS讓大家更好理解。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="div介紹" src="https://codepen.io/bradyyang-tw/embed/gOePjyE?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/gOePjyE">
+  div介紹</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<blockquote>
+<p>透過<code>&lt;div&gt;</code>可以讓我們在特定的區間裡面，使用不同的CSS樣式設計。</p>
+</blockquote>
+<h3 id="8-span">8. span</h3>
+<p><code>&lt;span&gt;</code>與<code>&lt;div&gt;</code>的功用相當類似，只是<code>&lt;div&gt;</code>是定義整塊的區間，而<code>&lt;span&gt;</code>是針對內容長度。</p>
+<p>這樣講大家可能還是不太清楚，我們可以看一下下面的範例，我將blue這個字透過<code>&lt;span&gt;</code>包著，並給予其CSS樣式，讓這個字可以有藍色的效果。
+若使用<code>&lt;div&gt;</code>換產生一個區塊，將這行文字變成三行。</p>
+<blockquote>
+<p>因此<code>&lt;div&gt;</code>被稱作區塊元素；<code>&lt;span&gt;</code>被稱作行內元素。</p>
+</blockquote>
+<iframe height="300" style="width: 100%;" scrolling="no" title="span介紹" src="https://codepen.io/bradyyang-tw/embed/ExEPeYw?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/ExEPeYw">
+  span介紹</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2 id="總結">總結</h2>
+<p>今天介紹了常用的HTML標籤，大家可以自己練習透過這些標籤建立一個基本的網站唷。
+但是標籤這麼多，我們也不可能全部都背起來，下一篇我們將介紹透過人家的網站來學習HTML。</p>
 
 
                 
@@ -240,13 +369,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2022/06/15/learncode/" data-toggle="tooltip" data-placement="top" title="新手工程師第一堂課：決定要來學習撰寫程式，但是要怎麼開始?">&larr;
+                        <a href="/frontend/Day4/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day4">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2022/06/27/learncode/" data-toggle="tooltip" data-placement="top" title="費曼技巧，讓學習事半功倍">Next
+                        <a href="/frontend/Day6/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day6">Next
                             Post &rarr;</a>
                     </li>
                     

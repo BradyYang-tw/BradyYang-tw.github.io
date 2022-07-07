@@ -6,11 +6,29 @@
     <description>Recent content in DevLife on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/devlife/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/devlife/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day6</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day6/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day6/</guid>
+      <description>觀察你喜歡的網站風格，並學習如何達到這種效果。 學習人家的網頁如何建立 上一篇我們介紹了幾個在&amp;lt;head&amp;gt;及&amp;lt;body&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>成為前端工程師-Day5</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day5/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day5/</guid>
+      <description>本篇將介紹身為前端工程師，你一定要知道的幾個HTML標籤。 常用的HTML標籤 根據上一篇 HTML基本格式，來向大家介紹使用於&amp;lt;head&amp;</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day4</title>
       <link>https://BradyYang-tw.github.io/frontend/Day4/</link>
-      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/frontend/Day4/</guid>
       <description>學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。 開始撰寫HTML 在Day3，我們建立了一個index.html，並透過瀏覽器呈</description>

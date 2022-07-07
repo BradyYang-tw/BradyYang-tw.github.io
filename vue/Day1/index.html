@@ -33,7 +33,7 @@
     
 
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" href="/img/me.ico">
 
     <title>手把手用Vue建立第一個網站 | Brady Yang&#39;s DevLife</title>
 
@@ -273,45 +273,17 @@ npm run dev
 <h3 id="2不使用建置工具">2.不使用建置工具</h3>
 <p>透過以下兩種Html基本上都差不多，這邊主要是使用createApp去建立一個Vue的實例，並透過mount將其渲染到<code>&lt;div id=&quot;app&quot;&gt;</code>上。即可建立Hello Vue的網頁。</p>
 <p><strong>Demo1.html</strong></p>
-<pre tabindex="0"><code>&lt;script src=&#34;https://unpkg.com/vue@3&#34;&gt;&lt;/script&gt;
-
-&lt;div id=&#34;app&#34;&gt;{{ message }}&lt;/div&gt;
-
-&lt;script&gt;
-  const { createApp } = Vue
-
-  createApp({
-    data() {
-      return {
-        message: &#39;Hello Vue!&#39;
-      }
-    }
-  }).mount(&#39;#app&#39;)
-&lt;/script&gt;
-</code></pre><p><strong>Demo2.html</strong></p>
-<pre tabindex="0"><code>&lt;script type=&#34;importmap&#34;&gt;
-  {
-    &#34;imports&#34;: {
-      &#34;vue&#34;: &#34;https://unpkg.com/vue@3/dist/vue.esm-browser.js&#34;
-    }
-  }
-&lt;/script&gt;
-
-&lt;div id=&#34;app&#34;&gt;{{ message }}&lt;/div&gt;
-
-&lt;script type=&#34;module&#34;&gt;
-  import { createApp } from &#39;vue&#39;
-
-  createApp({
-    data() {
-      return {
-        message: &#39;Hello Vue!&#39;
-      }
-    }
-  }).mount(&#39;#app&#39;)
-&lt;/script&gt;
-</code></pre><p>這邊用Codepen做個範例，不用建置工具單純用HTML建置Vue網頁的效果。<a href="https://codepen.io/bradyyang-tw/pen/gOepxaP?editors=1010">Demo1</a>
-<a href="https://codepen.io/bradyyang-tw/pen/ExEaWmB">Demo2</a></p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Demo1" src="https://codepen.io/bradyyang-tw/embed/gOepxaP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/gOepxaP">
+  Demo1</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p><strong>Demo2.html</strong></p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Demo2" src="https://codepen.io/bradyyang-tw/embed/ExEaWmB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/ExEaWmB">
+  Demo2</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 <h2 id="總結">總結</h2>
 <p>今天我們成功透過Vue框架建立了第一個網頁，並學了用3種不同的建立方式：</p>
 <ol>
