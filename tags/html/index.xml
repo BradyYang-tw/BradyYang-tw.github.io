@@ -6,7 +6,16 @@
     <description>Recent content in HTML on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day7</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day7/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day7/</guid>
+      <description>前端工程師多少應該了解一下什麼是Emmet? 如何透過Emmet工具，減少重複的事情。 前端工程師應該要認識的開發工具 Emmet 身為一個前端工程師，我們</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day6</title>
       <link>https://BradyYang-tw.github.io/frontend/Day6/</link>
