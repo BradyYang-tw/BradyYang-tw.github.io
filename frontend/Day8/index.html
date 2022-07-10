@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day4之HTML基礎" />
-    <meta property="og:title" content="成為前端工程師-Day4之HTML基礎" />
-    <meta property="twitter:title" content="成為前端工程師-Day4之HTML基礎" />
+    <meta name="title" content="成為前端工程師-Day8之CSS基礎" />
+    <meta property="og:title" content="成為前端工程師-Day8之CSS基礎" />
+    <meta property="twitter:title" content="成為前端工程師-Day8之CSS基礎" />
     
 
     
-    <meta name="description" content="學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。">
-    <meta property="og:description" content="學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。" />
-    <meta property="twitter:description" content="學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。" />
+    <meta name="description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。">
+    <meta property="og:description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。" />
+    <meta property="twitter:description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>成為前端工程師-Day4之HTML基礎 | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day8之CSS基礎 | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day4/">
+    <link rel="canonical" href="/frontend/Day8/">
 
     
     
@@ -211,7 +211,7 @@
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day4之HTML基礎</h1>
+                    <h1>成為前端工程師-Day8之CSS基礎</h1>
                     <h2 class="subheading">前端工程師養成</h2>
                     <span class="meta">
                         
@@ -220,7 +220,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Tuesday, July 5, 2022
+                            Sunday, July 10, 2022
                             
                             
                             
@@ -246,97 +246,107 @@
                 post-container">
 
                 
-                <p>學習正確的撰寫HTML5文件並透過HTML標籤來設計你的網頁。</p>
-<h1 id="開始撰寫html">開始撰寫HTML</h1>
-<p>在<a href="https://bradyyang-tw.github.io/frontend/Day3/">Day3</a>，我們建立了一個index.html，並透過瀏覽器呈現My First Website。
-但這只是單純的顯示文字內容而已，若要讓HTML更佳豐富，我們就得認識HTML標籤。</p>
-<h2 id="html標籤">HTML標籤</h2>
-<p>HTML標籤，通常以成對的標籤表示。</p>
+                <p>身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。</p>
+<h1 id="css是什麼-身為前端工程師一定要知道的網頁開發基礎">CSS是什麼? 身為前端工程師一定要知道的網頁開發基礎</h1>
+<p>身為前端工程師，你一定要知道的三大語言分別為HTML、CSS、Javascript。
+前面幾篇我們已經提過HTML如何應用於網頁開發，今天我們就要帶大家進入CSS的世界。</p>
+<h2 id="css是什麼">CSS是什麼?</h2>
+<p>CSS為Cascading Style Sheets的縮寫，中文為階層式樣式表。</p>
+<p>CSS主要目的是用來美化我們的HTML。如果大家前面幾篇有跟著動手實作的話應該會發現，
+雖然透過HTML建立了一個網站，但是只有一些簡單的標題樣式根本就吸引不了人。
+此時，就需要CSS來提升我們網站的美感。</p>
+<h2 id="css怎麼寫">CSS怎麼寫?</h2>
+<p>首先，我們先簡單看一個範例。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="第一個CSS" src="https://codepen.io/bradyyang-tw/embed/xxWOOPV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/xxWOOPV">
+  第一個CSS</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>可以發現我們透過以下的CSS語法，將<code>&lt;h1&gt;</code>標題變成背景為黑色且字體為白色。</p>
+<pre tabindex="0"><code>h1 {
+  color: white;
+  background: black;
+}
+</code></pre><ul>
+<li><code>&lt;h1&gt;</code> 在HTML稱作標籤，但在CSS稱作選擇器(Selector)。</li>
+<li><code>color</code> 及 <code>background</code> 分別為更換字體顏色及背景顏色，在CSS稱為屬性(Property)。</li>
+<li><code>white</code> 及 <code>black</code> 為我們定義的顏色，在CSS稱為值(Value)。</li>
+<li>賦予每個Proterty值時，要用<code>;</code>做結尾，以表示樣式設定完畢。</li>
+</ul>
+<p>範例是將<code>&lt;h1&gt;</code>裡面的內容做顏色的更換，今天若想變更其它標籤的CSS，只需要將<code>&lt;h1&gt;</code>更換為其它標籤即可。</p>
 <blockquote>
-<p>少數的標籤是不需要成對出現的，比如 <code>&lt;br&gt;</code>、<code>&lt;img&gt;</code>等。英文稱作empty elements。</p>
+<p>由於上述CSS是根據標籤來做網站的美化，因此又稱作標籤選擇器。除了標籤選擇器之外，我們還可以用其它方法來套用CSS，這個後續我們會再介紹。</p>
 </blockquote>
-<pre tabindex="0"><code>&lt;tag&gt;要呈現的內容&lt;/tag&gt;
-</code></pre><blockquote>
-<p>注意第2個tag前面多了一個斜線</p>
-</blockquote>
-<p>讓我們來看看同樣的內容，使用tag的前後差異。
-
-  <img src="https://i.imgur.com/G5p3uHH.png" alt="">
-
-</p>
-<p>有沒有發現不同標籤字體大小及粗體都不相同。這是HTML賦予這幾個標籤的基本的樣式。</p>
-<table>
-<thead>
-<tr>
-<th>標籤</th>
-<th>意思</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>h1</td>
-<td>標題1 ，通常一個網站只會使用一個h1標籤代表最重要的標題</td>
-</tr>
-<tr>
-<td>h2</td>
-<td>標題2</td>
-</tr>
-<tr>
-<td>h3</td>
-<td>標題3</td>
-</tr>
-<tr>
-<td>p</td>
-<td>段落</td>
-</tr>
-</tbody>
-</table>
-<p>你可以把標籤想成Word裡的樣式。不同樣式，都會讓內容產生不同效果。
-
-  <img src="https://i.imgur.com/xTiTJ1T.png" alt="">
-
-</p>
 <blockquote>
-<p>除了上述幾個的標籤外，還有很多實用的標籤。可以參考<a href="https://www.w3schools.com/tags/ref_byfunc.asp">此網站</a> 。
-雖然有很多標籤，但大家也不用緊張，隨著實作練習越來越多，慢慢的就會知道要使用哪些標籤了。</p>
+<p>CSS裡面的Property是根據HTML的標籤有沒有支援，如果今天這個標籤沒有支援此Property，就不會呈現你想要的樣式。之後我們也會教大家如何知道我的標籤有沒有支援此Property。</p>
 </blockquote>
-<h2 id="建立html環境">建立HTML環境</h2>
-<p>雖然我們可以直接將內容就寫在html檔案，但HTML的撰寫是有基本格式。要照著基本格式寫，網頁才不會出錯。
-以下為基本的HTML格式，
-主要由<code>&lt;html&gt;</code>、<code>&lt;head&gt;</code>及<code>&lt;body&gt;</code>三個標籤組成。</p>
+<h2 id="如何在網頁內加入css">如何在網頁內加入CSS?</h2>
+<p>剛剛我們寫好了一隻CSS，主要是針對<code>&lt;h1&gt;</code>的顏色更換。那麼要怎麼樣讓網站知道這個CSS的存在呢?以下教大家三個方法：</p>
+<h3 id="方法一透過style">方法一：透過<code>style</code></h3>
+<p>我們可以透過<code>&lt;style&gt;</code>的標籤將CSS的內容寫在裡面，最後將整個<code>&lt;style&gt;</code>放在<code>&lt;head&gt;</code>或<code>&lt;body&gt;</code>裡面。
+此方法常用於只有一個HTML檔案時，可以直接將CSS寫在一起，又稱作Internal CSS。</p>
+<pre tabindex="0"><code>&lt;style&gt;
+    h1 {
+      color: white;
+      background: black;
+    }
+  &lt;/style&gt;
+</code></pre><p>以下為將<code>&lt;style&gt;</code>放到<code>&lt;head&gt;</code>：</p>
 <pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang=&#34;en&#34;&gt;
 &lt;head&gt;
-  &lt;title&gt;Brady的網頁&lt;/title&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;style&gt;
+    h1 {
+      color: white;
+      background: black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;h1&gt;標題1&lt;/h1&gt;
-  &lt;h2&gt;標題2&lt;/h2&gt;
-  &lt;h3&gt;標題3&lt;/h3&gt;
-  &lt;p&gt;段落&lt;/p&gt;
+  &lt;h1&gt;這是我的第一個CSS&lt;/h1&gt;
+  
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><ul>
-<li>
-<p><code>&lt;!DOCTYPE html&gt;</code> 主要是告訴瀏覽器此文件是由HTML5撰寫。</p>
-</li>
-<li>
-<p><code>&lt;html&gt;</code> 每個HTML都是由此標籤開始，裡面在放<code>&lt;head&gt;</code>、<code>&lt;body&gt;</code>兩個標籤。</p>
-</li>
-<li>
-<p><code>&lt;head&gt;</code> 主要是儲存網頁的重要資訊。像是範例裡的<code>&lt;title&gt;</code>主要是顯示瀏覽器頁籤上的標題。
+</code></pre><blockquote>
+<p>若要將 <code>&lt;style&gt;</code>放到<code>&lt;body&gt;</code>內，要注意你要變更樣式的標籤是否在<code>&lt;style&gt;</code>之後，否則會沒有樣式的效果。</p>
+</blockquote>
+<h3 id="方法二透過link讀取外部檔案">方法二：透過<code>link</code>讀取外部檔案</h3>
+<p>假設今天我們的網站根據不同情況，想要呈現不同的樣式，我們就可以建立多個CSS樣式並根據情況選擇要讀取哪一個CSS檔案。
+此方法又稱為External CSS。</p>
+<p>首先我們在<a href="https://bradyyang-tw.github.io/frontend/Day3/">Day3</a> 建立的project資料夾下，將CSS寫在一個名為style.css的檔案。
 
-  <img src="https://i.imgur.com/PYfWqkt.png" alt="">
+  <img src="https://i.imgur.com/5cNvEFj.png" alt="">
 
 </p>
-</li>
-<li>
-<p><code>&lt;body&gt;</code> 主要是放網站的要呈現的內容。像先前我們介紹的<code>&lt;h1&gt;</code>、<code>&lt;p&gt;</code>等標籤。</p>
-</li>
-</ul>
-<h2 id="總結">總結</h2>
-<p>今天我們學到了HTML正確的格式，也學到了HTML標籤的使用。
-下一次會在介紹更多常用的HTML標籤唷。</p>
+<p>接著，透過<code>&lt;link&gt;</code>將該檔案引入HTML內。
+由於style.css與index.html都是在同一層目錄，所以可以直接在href打上CSS檔名。</p>
+<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+</code></pre><p>以下為將<code>&lt;link&gt;</code>放到<code>&lt;head&gt;</code>：</p>
+<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;這是我的第一個CSS&lt;/h1&gt;
+  
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="方法三透過標籤內的style屬性">方法三：透過標籤內的style屬性</h3>
+<p>今天我們也可以直接透過標籤內的style屬性，來呈現想要的樣式。
+由於是直接寫在標籤內，故又稱為Inline CSS。</p>
+<pre tabindex="0"><code>&lt;h1 style=&#34;color:white;background:black;&#34;&gt;這是我的第一個CSS&lt;/h1&gt;
+</code></pre><h2 id="總結">總結</h2>
+<p>今天簡單的帶大家認識CSS是什麼以及如何使用，大家可以先將上述方法實際練習一下。
+先對CSS有個初步的認識，之後我們會再針對CSS做更深入的介紹。</p>
 
 
                 
@@ -345,15 +355,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/vue/Day1/" data-toggle="tooltip" data-placement="top" title="手把手用Vue建立第一個網站">&larr;
+                        <a href="/frontend/Day7/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day7之Emmet工具">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/frontend/Day5/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day5之HTML常用標籤">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

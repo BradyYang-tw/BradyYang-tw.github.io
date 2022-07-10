@@ -6,9 +6,18 @@
     <description>Recent content in Front-end on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>成為前端工程師-Day7</title>
+      <title>成為前端工程師-Day8之CSS基礎</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day8/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day8/</guid>
+      <description>身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。 CSS是什麼? 身為前端工程師一定要知道的網頁開發基礎 身為前端</description>
+    </item>
+    
+    <item>
+      <title>成為前端工程師-Day7之Emmet工具</title>
       <link>https://BradyYang-tw.github.io/frontend/Day7/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -17,7 +26,7 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day6</title>
+      <title>成為前端工程師-Day6之向其它網站學習HTML</title>
       <link>https://BradyYang-tw.github.io/frontend/Day6/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -26,7 +35,7 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day5</title>
+      <title>成為前端工程師-Day5之HTML常用標籤</title>
       <link>https://BradyYang-tw.github.io/frontend/Day5/</link>
       <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -35,7 +44,7 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day4</title>
+      <title>成為前端工程師-Day4之HTML基礎</title>
       <link>https://BradyYang-tw.github.io/frontend/Day4/</link>
       <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -44,7 +53,7 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day3</title>
+      <title>成為前端工程師-Day3之第一個網頁</title>
       <link>https://BradyYang-tw.github.io/frontend/Day3/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -53,7 +62,7 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day2</title>
+      <title>成為前端工程師-Day2之建立開發環境</title>
       <link>https://BradyYang-tw.github.io/frontend/Day2/</link>
       <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
       
@@ -62,7 +71,7 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day1</title>
+      <title>成為前端工程師-Day1之何謂前端工程師</title>
       <link>https://BradyYang-tw.github.io/frontend/Day1/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
