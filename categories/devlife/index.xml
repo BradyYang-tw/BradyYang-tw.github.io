@@ -6,7 +6,16 @@
     <description>Recent content in DevLife on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/devlife/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/categories/devlife/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day9之常用的CSS選擇器(簡單篇)</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day9/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day9/</guid>
+      <description>設定網站的CSS樣式，可以使用很多種不同的選擇器。我們將其分為簡單及進階兩類。今天將帶大家介紹簡單的選擇器使用方式。 CSS選擇器類型介紹(簡</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day8之CSS基礎</title>
       <link>https://BradyYang-tw.github.io/frontend/Day8/</link>

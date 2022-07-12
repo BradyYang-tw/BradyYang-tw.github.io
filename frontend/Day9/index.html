@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day8之CSS基礎" />
-    <meta property="og:title" content="成為前端工程師-Day8之CSS基礎" />
-    <meta property="twitter:title" content="成為前端工程師-Day8之CSS基礎" />
+    <meta name="title" content="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)" />
+    <meta property="og:title" content="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)" />
+    <meta property="twitter:title" content="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)" />
     
 
     
-    <meta name="description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。">
-    <meta property="og:description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。" />
-    <meta property="twitter:description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。" />
+    <meta name="description" content="CSS選擇器類型介紹(簡單篇)">
+    <meta property="og:description" content="CSS選擇器類型介紹(簡單篇)" />
+    <meta property="twitter:description" content="CSS選擇器類型介紹(簡單篇)" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>成為前端工程師-Day8之CSS基礎 | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day9之常用的CSS選擇器(簡單篇) | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day8/">
+    <link rel="canonical" href="/frontend/Day9/">
 
     
     
@@ -211,7 +211,7 @@
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day8之CSS基礎</h1>
+                    <h1>成為前端工程師-Day9之常用的CSS選擇器(簡單篇)</h1>
                     <h2 class="subheading">前端工程師養成</h2>
                     <span class="meta">
                         
@@ -220,7 +220,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Sunday, July 10, 2022
+                            Monday, July 11, 2022
                             
                             
                             
@@ -246,107 +246,101 @@
                 post-container">
 
                 
-                <p>身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。</p>
-<h1 id="css是什麼-身為前端工程師一定要知道的網頁開發基礎">CSS是什麼? 身為前端工程師一定要知道的網頁開發基礎</h1>
-<p>身為前端工程師，你一定要知道的三大語言分別為HTML、CSS、Javascript。
-前面幾篇我們已經提過HTML如何應用於網頁開發，今天我們就要帶大家進入CSS的世界。</p>
-<h2 id="css是什麼">CSS是什麼?</h2>
-<p>CSS為Cascading Style Sheets的縮寫，中文為階層式樣式表。</p>
-<p>CSS主要目的是用來美化我們的HTML。如果大家前面幾篇有跟著動手實作的話應該會發現，
-雖然透過HTML建立了一個網站，但是只有一些簡單的標題樣式根本就吸引不了人。
-此時，就需要CSS來提升我們網站的美感。</p>
-<h2 id="css怎麼寫">CSS怎麼寫?</h2>
-<p>首先，我們先簡單看一個範例。</p>
-<iframe height="300" style="width: 100%;" scrolling="no" title="第一個CSS" src="https://codepen.io/bradyyang-tw/embed/xxWOOPV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/xxWOOPV">
-  第一個CSS</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-<p>可以發現我們透過以下的CSS語法，將<code>&lt;h1&gt;</code>標題變成背景為黑色且字體為白色。</p>
-<pre tabindex="0"><code>h1 {
-  color: white;
-  background: black;
+                <p>設定網站的CSS樣式，可以使用很多種不同的選擇器。我們將其分為簡單及進階兩類。今天將帶大家介紹簡單的選擇器使用方式。</p>
+<h1 id="css選擇器類型介紹簡單篇">CSS選擇器類型介紹(簡單篇)</h1>
+<p>在<a href="https://bradyyang-tw.github.io/frontend/Day8/">Day8</a>我們第一次使用了CSS來美化網站，當時我們想要調整標題的顏色，因此使用標籤選擇器來設定<code>&lt;h1&gt;</code>的風格。
+但是今天如果你沒有要每個標籤都套用相同的風格，標籤選擇器就不會是你的選擇，那麼我們該怎麼辦呢?
+以下將介紹常見的選擇器類型(簡單篇)。</p>
+<blockquote>
+<p>以下範例，為了方便大家閱讀，我就不使用完整的HTML格式。若還不知道完整HTML格式的朋友可以參考<a href="https://bradyyang-tw.github.io/frontend/Day4/">Day4</a></p>
+</blockquote>
+<h2 id="標籤選擇器-element-selector">標籤選擇器 (element Selector)</h2>
+<p>首先，再複習一下標籤選擇器。
+假設今天希望網頁段落都用藍色的字體呈現，我們就可以針對<code>&lt;p&gt;</code>標籤來設定CSS樣式。此時，就是<code>&lt;p&gt;</code>的標籤選擇器。</p>
+<pre tabindex="0"><code>p {
+  color: blue;
 }
 </code></pre><ul>
-<li><code>&lt;h1&gt;</code> 在HTML稱作標籤，但在CSS稱作選擇器(Selector)。</li>
-<li><code>color</code> 及 <code>background</code> 分別為更換字體顏色及背景顏色，在CSS稱為屬性(Property)。</li>
-<li><code>white</code> 及 <code>black</code> 為我們定義的顏色，在CSS稱為設定值(Value)。</li>
-<li>賦予每個Proterty值時，要用<code>;</code>做結尾，以表示樣式設定完畢。</li>
+<li><code>p</code>為標籤名稱</li>
+<li>color 用法為更換字體顏色，在CSS稱為屬性(Property)。</li>
+<li>blue 為字體顏色，在CSS稱為設定值(Value)。</li>
 </ul>
-<p>範例是將<code>&lt;h1&gt;</code>裡面的內容做顏色的更換，今天若想變更其它標籤的CSS，只需要將<code>&lt;h1&gt;</code>更換為其它標籤即可。</p>
+<p>以下為實際效果：</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="標籤選擇器" src="https://codepen.io/bradyyang-tw/embed/poLEzpW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/poLEzpW">
+  標籤選擇器</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2 id="id選擇器-id-selector">id選擇器 (id Selector)</h2>
+<p>有些情況，你不希望每個標籤的風格都一模一樣，此時你可以使用id選擇器。</p>
+<p>用同樣例子來說明，今天只希望將第1個段落的字為藍色，我們可以在第1個<code>&lt;p&gt;</code>標籤加入id屬性並命名為p1。</p>
 <blockquote>
-<p>由於上述CSS是根據標籤來做網站的美化，因此又稱作標籤選擇器。除了標籤選擇器之外，我們還可以用其它方法來套用CSS，這個後續我們會再介紹。</p>
+<p>設定屬性時，透過等號賦予屬性設定值，切記要加上引號。</p>
 </blockquote>
+<pre tabindex="0"><code>&lt;h1&gt; 標籤選擇器&lt;/h1&gt;
+&lt;p id=&#39;p1&#39;&gt;今天&lt;/p&gt;
+&lt;p&gt;我要教&lt;/p&gt;
+&lt;p&gt;選擇器&lt;/p&gt;
+</code></pre><p>接著，透過id選擇器將id為p1的標籤建立CSS樣式。</p>
+<pre tabindex="0"><code>#p1 {
+  color: blue;
+}
+</code></pre><ul>
+<li><code>#p1</code>用 # 字號 + id名稱，表示要對id為p1的標籤設定CSS樣式。</li>
+</ul>
+<p>以下為實際效果：</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="id選擇器" src="https://codepen.io/bradyyang-tw/embed/XWEjrPP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/XWEjrPP">
+  id選擇器</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 <blockquote>
-<p>CSS裡面的Property是根據HTML的標籤有沒有支援，如果今天這個標籤沒有支援此Property，就不會呈現你想要的樣式。之後我們也會教大家如何知道我的標籤有沒有支援此Property。</p>
+<p>若使用id選擇器，切記id的是獨一無二的，也就是說不能在其他標籤設定相同的id名稱。</p>
 </blockquote>
-<h2 id="如何在網頁內加入css">如何在網頁內加入CSS?</h2>
-<p>剛剛我們寫好了一隻CSS，主要是針對<code>&lt;h1&gt;</code>的顏色更換。那麼要怎麼樣讓網站知道這個CSS的存在呢?以下教大家三個方法：</p>
-<h3 id="方法一透過style">方法一：透過<code>style</code></h3>
-<p>我們可以透過<code>&lt;style&gt;</code>的標籤將CSS的內容寫在裡面，最後將整個<code>&lt;style&gt;</code>放在<code>&lt;head&gt;</code>或<code>&lt;body&gt;</code>裡面。
-此方法常用於只有一個HTML檔案時，可以直接將CSS寫在一起，又稱作Internal CSS。</p>
-<pre tabindex="0"><code>&lt;style&gt;
-    h1 {
-      color: white;
-      background: black;
-    }
-  &lt;/style&gt;
-</code></pre><p>以下為將<code>&lt;style&gt;</code>放到<code>&lt;head&gt;</code>：</p>
-<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;style&gt;
-    h1 {
-      color: white;
-      background: black;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;這是我的第一個CSS&lt;/h1&gt;
-  
-&lt;/body&gt;
-&lt;/html&gt;
+<h2 id="類別選擇器-class-selector">類別選擇器 (class Selector)</h2>
+<p>與id選擇器的用途類似，主要差異是類別選擇器可以設定多個相同的名稱。</p>
+<p>同上，假設今天希望除了第1個段落以外，其他段落都是藍色字體，我們可以在第2及3個<code>&lt;p&gt;</code>標籤加入class屬性並命名為p23。</p>
+<pre tabindex="0"><code>&lt;h1&gt; 標籤選擇器&lt;/h1&gt;
+&lt;p&gt;今天&lt;/p&gt;
+&lt;p class=&#34;p23&#34;&gt;我要教&lt;/p&gt;
+&lt;p class=&#34;p23&#34;&gt;選擇器&lt;/p&gt;
+</code></pre><p>接著，透過類別選擇器將class為p23的標籤建立CSS樣式。</p>
+<pre tabindex="0"><code>.p23 {
+  color: blue;
+}
+</code></pre><ul>
+<li><code>.23</code>用 . 符號 + 類別名稱，表示要對類別為p23的標籤設定CSS樣式。</li>
+</ul>
+<p>以下為實際效果：</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="類別選擇器" src="https://codepen.io/bradyyang-tw/embed/OJvRLep?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/OJvRLep">
+  類別選擇器</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>由於不同類型的標籤，皆可設定相同類別名稱。因此，也可以這樣設定CSS，以特別表示類別名稱為的p23的<code>&lt;p&gt;</code>標籤。</p>
+<pre tabindex="0"><code>p.p23 {
+  color: blue;
+}
 </code></pre><blockquote>
-<p>若要將 <code>&lt;style&gt;</code>放到<code>&lt;body&gt;</code>內，要注意你要變更樣式的標籤是否在<code>&lt;style&gt;</code>之後，否則會沒有樣式的效果。</p>
+<p>一個標籤也可以有多個類別名稱。如；<code>&lt;p class=&quot;p2 p3&quot;&gt;我要教&lt;/p&gt;</code>。該標籤同時有p2、p3的類別名稱。</p>
 </blockquote>
-<h3 id="方法二透過link讀取外部檔案">方法二：透過<code>link</code>讀取外部檔案</h3>
-<p>假設今天我們的網站根據不同情況，想要呈現不同的樣式，我們就可以建立多個CSS樣式並根據情況選擇要讀取哪一個CSS檔案。
-此方法又稱為External CSS。</p>
-<p>首先我們在<a href="https://bradyyang-tw.github.io/frontend/Day3/">Day3</a> 建立的project資料夾下，將CSS寫在一個名為style.css的檔案。
-
-  <img src="https://i.imgur.com/5cNvEFj.png" alt="">
-
-</p>
-<p>接著，透過<code>&lt;link&gt;</code>將該檔案引入HTML內。
-由於style.css與index.html都是在同一層目錄，所以可以直接在href打上CSS檔名。</p>
-<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
-</code></pre><p>以下為將<code>&lt;link&gt;</code>放到<code>&lt;head&gt;</code>：</p>
-<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;這是我的第一個CSS&lt;/h1&gt;
-  
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h3 id="方法三透過標籤內的style屬性">方法三：透過標籤內的style屬性</h3>
-<p>今天我們也可以直接透過標籤內的style屬性，來呈現想要的樣式。
-由於是直接寫在標籤內，故又稱為Inline CSS。</p>
-<pre tabindex="0"><code>&lt;h1 style=&#34;color:white;background:black;&#34;&gt;這是我的第一個CSS&lt;/h1&gt;
-</code></pre><h2 id="總結">總結</h2>
-<p>今天簡單的帶大家認識CSS是什麼以及如何使用，大家可以先將上述方法實際練習一下。
-先對CSS有個初步的認識，之後我們會再針對CSS做更深入的介紹。</p>
+<h2 id="通用選擇器-universal-selector">通用選擇器 (Universal Selector)</h2>
+<p>今天如果希望所有標籤都有相同效果。比如，都要呈現藍色的字體，那麼可以使用通用選擇器。</p>
+<pre tabindex="0"><code>* {
+  color: blue;
+}
+</code></pre><p><code>*</code> 代表所有的標籤。</p>
+<h2 id="群組選擇器-grouping-selector">群組選擇器 (Grouping Selector)</h2>
+<p>今天若只希望部分標籤呈現相同效果時，如<code>&lt;h1&gt;、#p1、.p23</code>都呈現藍色的字體，那麼可以使用群組選擇器。</p>
+<pre tabindex="0"><code>h1, #p1, .p23{
+	color: blue;
+}
+</code></pre><blockquote>
+<p>主要透過逗號，將要有相同效果的選擇器組合在一起。</p>
+</blockquote>
+<h2 id="總結">總結</h2>
+<p>今天帶大家使用幾個簡單CSS選擇器，來建立網站樣式。
+大家可以先動手練習一下，下一篇將帶大家使用進階版的CSS選擇器。</p>
 
 
                 
@@ -355,15 +349,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/frontend/Day7/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day7之Emmet工具">&larr;
+                        <a href="/frontend/Day8/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day8之CSS基礎">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/frontend/Day9/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
