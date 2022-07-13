@@ -6,7 +6,16 @@
     <description>Recent content in Front-end on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day10之常用的CSS選擇器(進階篇)</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day10/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day10/</guid>
+      <description>CSS選擇器類型介紹(進階篇) Day9介紹了CSS選擇器(簡單篇)，今天就來教大家進階篇的一些技巧吧。 以下範例，為了方便大家閱讀，我就不使用</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day9之常用的CSS選擇器(簡單篇)</title>
       <link>https://BradyYang-tw.github.io/frontend/Day9/</link>

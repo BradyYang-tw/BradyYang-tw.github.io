@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)" />
-    <meta property="og:title" content="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)" />
-    <meta property="twitter:title" content="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)" />
+    <meta name="title" content="成為前端工程師-Day10之常用的CSS選擇器(進階篇)" />
+    <meta property="og:title" content="成為前端工程師-Day10之常用的CSS選擇器(進階篇)" />
+    <meta property="twitter:title" content="成為前端工程師-Day10之常用的CSS選擇器(進階篇)" />
     
 
     
-    <meta name="description" content="CSS選擇器類型介紹(簡單篇)">
-    <meta property="og:description" content="CSS選擇器類型介紹(簡單篇)" />
-    <meta property="twitter:description" content="CSS選擇器類型介紹(簡單篇)" />
+    <meta name="description" content="CSS選擇器類型介紹(進階篇)">
+    <meta property="og:description" content="CSS選擇器類型介紹(進階篇)" />
+    <meta property="twitter:description" content="CSS選擇器類型介紹(進階篇)" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>成為前端工程師-Day9之常用的CSS選擇器(簡單篇) | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day10之常用的CSS選擇器(進階篇) | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day9/">
+    <link rel="canonical" href="/frontend/Day10/">
 
     
     
@@ -211,7 +211,7 @@
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day9之常用的CSS選擇器(簡單篇)</h1>
+                    <h1>成為前端工程師-Day10之常用的CSS選擇器(進階篇)</h1>
                     <h2 class="subheading">前端工程師養成</h2>
                     <span class="meta">
                         
@@ -220,7 +220,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Monday, July 11, 2022
+                            Wednesday, July 13, 2022
                             
                             
                             
@@ -246,101 +246,103 @@
                 post-container">
 
                 
-                <p>設定網站的CSS樣式，可以使用很多種不同的選擇器。我們將其分為簡單及進階兩類。今天將帶大家介紹簡單的選擇器使用方式。</p>
-<h1 id="css選擇器類型介紹簡單篇">CSS選擇器類型介紹(簡單篇)</h1>
-<p>在<a href="https://bradyyang-tw.github.io/frontend/Day8/">Day8</a>我們第一次使用了CSS來美化網站，當時我們想要調整標題的顏色，因此使用標籤選擇器來設定<code>&lt;h1&gt;</code>的風格。
-但是今天如果你沒有要每個標籤都套用相同的風格，標籤選擇器就不會是你的選擇，那麼我們該怎麼辦呢?
-以下將介紹常見的選擇器類型(簡單篇)。</p>
+                <h1 id="css選擇器類型介紹進階篇">CSS選擇器類型介紹(進階篇)</h1>
+<p><a href="https://bradyyang-tw.github.io/frontend/Day9/">Day9</a>介紹了CSS選擇器(簡單篇)，今天就來教大家進階篇的一些技巧吧。</p>
 <blockquote>
 <p>以下範例，為了方便大家閱讀，我就不使用完整的HTML格式。若還不知道完整HTML格式的朋友可以參考<a href="https://bradyyang-tw.github.io/frontend/Day4/">Day4</a></p>
 </blockquote>
-<h2 id="標籤選擇器-element-selector">標籤選擇器 (element Selector)</h2>
-<p>首先，再複習一下標籤選擇器。
-假設今天希望網頁段落都用藍色的字體呈現，我們就可以針對<code>&lt;p&gt;</code>標籤來設定CSS樣式。此時，就是<code>&lt;p&gt;</code>的標籤選擇器。</p>
-<pre tabindex="0"><code>p {
-  color: blue;
-}
-</code></pre><ul>
-<li><code>p</code>為標籤名稱</li>
-<li>color 用法為更換字體顏色，在CSS稱為屬性(Property)。</li>
-<li>blue 為字體顏色，在CSS稱為設定值(Value)。</li>
-</ul>
-<p>以下為實際效果：</p>
-<iframe height="300" style="width: 100%;" scrolling="no" title="標籤選擇器" src="https://codepen.io/bradyyang-tw/embed/poLEzpW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/poLEzpW">
-  標籤選擇器</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+<h2 id="組合選擇器-combinator-selectors-">組合選擇器 (Combinator selectors )</h2>
+<p>有時候，你可能會希望透過一些條件，來設計網站的CSS樣式。我們先看以下範例：</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="combinator selector" src="https://codepen.io/bradyyang-tw/embed/oNqzdBe?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/oNqzdBe">
+  combinator selector</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-<h2 id="id選擇器-id-selector">id選擇器 (id Selector)</h2>
-<p>有些情況，你不希望每個標籤的風格都一模一樣，此時你可以使用id選擇器。</p>
-<p>用同樣例子來說明，今天只希望將第1個段落的字為藍色，我們可以在第1個<code>&lt;p&gt;</code>標籤加入id屬性並命名為p1。</p>
+<p>解釋：</p>
+<table>
+<thead>
+<tr>
+<th>combinators</th>
+<th>範例</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空格</td>
+<td>div p { background-color:pink; }</td>
+<td>在div標籤內，<strong>所有</strong>p標籤，背景顏色為粉紅色。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>div &gt; p { color:blue; }</td>
+<td>父標籤為div下，<strong>所有</strong>p標籤，字體顏色為藍色。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>div + p { text-align:center; }</td>
+<td>在div標籤後，<strong>第1個</strong>p標籤，文字置中。</td>
+</tr>
+<tr>
+<td>~</td>
+<td>div ~ p { font-size: 24px; }</td>
+<td>若在div標籤後，<strong>所有</strong>的p標籤，字體大小為24px。</td>
+</tr>
+</tbody>
+</table>
+<p>組合選擇器讓我們可以透過上述方式去任意組合選擇器，以達到我們想要的效果。</p>
+<h2 id="擬態類別選擇器-pseudo-classes">擬態類別選擇器 (Pseudo-classes)</h2>
+<p>擬態類別選擇器，主要是用來定義一個特別的狀態。以下我們使用連結<code>&lt;a&gt;</code>來作為範例。</p>
 <blockquote>
-<p>設定屬性時，透過等號賦予屬性設定值，切記要加上引號。</p>
+<p>大家可以試著將滑鼠移動到文字內容上，看看會發生什麼事情。</p>
 </blockquote>
-<pre tabindex="0"><code>&lt;h1&gt; 標籤選擇器&lt;/h1&gt;
-&lt;p id=&#39;p1&#39;&gt;今天&lt;/p&gt;
-&lt;p&gt;我要教&lt;/p&gt;
-&lt;p&gt;選擇器&lt;/p&gt;
-</code></pre><p>接著，透過id選擇器將id為p1的標籤建立CSS樣式。</p>
-<pre tabindex="0"><code>#p1 {
-  color: blue;
-}
-</code></pre><ul>
-<li><code>#p1</code>用 # 字號 + id名稱，表示要對id為p1的標籤設定CSS樣式。</li>
-</ul>
-<p>以下為實際效果：</p>
-<iframe height="300" style="width: 100%;" scrolling="no" title="id選擇器" src="https://codepen.io/bradyyang-tw/embed/XWEjrPP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/XWEjrPP">
-  id選擇器</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="pseudo-class" src="https://codepen.io/bradyyang-tw/embed/oNqzJRd?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/oNqzJRd">
+  pseudo-class</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+<ul>
+<li><code>&lt;a&gt;</code> 連結的標籤</li>
+<li><code>hover</code> 擬態類別選擇器，hover表示當滑鼠經過的這個狀態。</li>
+<li>color 定義連結內容的顏色，在CSS稱為特性(Proterty)。</li>
+<li>red 定義要呈現的顏色，在CSS稱為設定值(Value)。</li>
+<li>記得設定完每個特性後，要加上<code>;</code>表示結束。</li>
+</ul>
+<p>針對<code>&lt;a&gt;</code>連結標籤，還有以下幾種擬態類別選擇器：</p>
+<table>
+<thead>
+<tr>
+<th>Pseudo-classes</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hover</td>
+<td>表示滑鼠經過的這個狀態</td>
+</tr>
+<tr>
+<td>link</td>
+<td>表示還沒到過這個連結的狀態</td>
+</tr>
+<tr>
+<td>visted</td>
+<td>表示已經到過這個連結的狀態</td>
+</tr>
+<tr>
+<td>active</td>
+<td>表示滑鼠點擊的這個狀態</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p>若使用id選擇器，切記id的是獨一無二的，也就是說不能在其他標籤設定相同的id名稱。</p>
-</blockquote>
-<h2 id="類別選擇器-class-selector">類別選擇器 (class Selector)</h2>
-<p>與id選擇器的用途類似，主要差異是類別選擇器可以設定多個相同的名稱。</p>
-<p>同上，假設今天希望除了第1個段落以外，其他段落都是藍色字體，我們可以在第2及3個<code>&lt;p&gt;</code>標籤加入class屬性並命名為p23。</p>
-<pre tabindex="0"><code>&lt;h1&gt; 標籤選擇器&lt;/h1&gt;
-&lt;p&gt;今天&lt;/p&gt;
-&lt;p class=&#34;p23&#34;&gt;我要教&lt;/p&gt;
-&lt;p class=&#34;p23&#34;&gt;選擇器&lt;/p&gt;
-</code></pre><p>接著，透過類別選擇器將class為p23的標籤建立CSS樣式。</p>
-<pre tabindex="0"><code>.p23 {
-  color: blue;
-}
-</code></pre><ul>
-<li><code>.23</code>用 . 符號 + 類別名稱，表示要對類別為p23的標籤設定CSS樣式。</li>
-</ul>
-<p>以下為實際效果：</p>
-<iframe height="300" style="width: 100%;" scrolling="no" title="類別選擇器" src="https://codepen.io/bradyyang-tw/embed/OJvRLep?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/OJvRLep">
-  類別選擇器</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-<p>由於不同類型的標籤，皆可設定相同類別名稱。因此，也可以這樣設定CSS，以特別表示類別名稱為的p23的<code>&lt;p&gt;</code>標籤。</p>
-<pre tabindex="0"><code>p.p23 {
-  color: blue;
-}
-</code></pre><blockquote>
-<p>一個標籤也可以有多個類別名稱。如；<code>&lt;p class=&quot;p2 p3&quot;&gt;我要教&lt;/p&gt;</code>。該標籤同時有p2、p3的類別名稱。</p>
-</blockquote>
-<h2 id="通用選擇器-universal-selector">通用選擇器 (Universal Selector)</h2>
-<p>今天如果希望所有標籤都有相同效果。比如，都要呈現藍色的字體，那麼可以使用通用選擇器。</p>
-<pre tabindex="0"><code>* {
-  color: blue;
-}
-</code></pre><p><code>*</code> 代表所有的標籤。</p>
-<h2 id="群組選擇器-grouping-selector">群組選擇器 (Grouping Selector)</h2>
-<p>今天若只希望部分標籤呈現相同效果時，如<code>&lt;h1&gt;、#p1、.p23</code>都呈現藍色的字體，那麼可以使用群組選擇器。</p>
-<pre tabindex="0"><code>h1, #p1, .p23{
-	color: blue;
-}
-</code></pre><blockquote>
-<p>主要透過逗號，將要有相同效果的選擇器組合在一起。</p>
+<p>擬態類別選擇器是一個滿常用的CSS寫法，上述介紹只是其中的4個，大家可以到<a href="https://www.w3schools.com/css/css_pseudo_classes.asp">此網站的最下方</a>，這邊列出了所有的擬態類別選擇器。
+大家可以看看有沒有想要的效果。</p>
 </blockquote>
 <h2 id="總結">總結</h2>
-<p>今天帶大家使用幾個簡單CSS選擇器，來建立網站樣式。
-大家可以先動手練習一下，下一篇將帶大家使用進階版的CSS選擇器。</p>
+<p>介紹了這麼多選擇器，其實最重要的還是能否將你心目中的網站效果呈現出來。
+畢竟CSS有太多種方式可以來設定網站樣式，因此建議大家可以先學會幾種設定方式。
+後續，再來精進。</p>
 
 
                 
@@ -349,15 +351,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/frontend/Day8/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day8之CSS基礎">&larr;
+                        <a href="/frontend/Day9/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/frontend/Day10/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day10之常用的CSS選擇器(進階篇)">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
