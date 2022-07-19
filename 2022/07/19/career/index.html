@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day8之CSS基礎" />
-    <meta property="og:title" content="成為前端工程師-Day8之CSS基礎" />
-    <meta property="twitter:title" content="成為前端工程師-Day8之CSS基礎" />
+    <meta name="title" content="習慣跳脫舒適圈，建立自己的職涯護城河" />
+    <meta property="og:title" content="習慣跳脫舒適圈，建立自己的職涯護城河" />
+    <meta property="twitter:title" content="習慣跳脫舒適圈，建立自己的職涯護城河" />
     
 
     
-    <meta name="description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。">
-    <meta property="og:description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。" />
-    <meta property="twitter:description" content="身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。" />
+    <meta name="description" content="在職場工作幾年後，你是否意識到自己在這領域的成長曲線越來越平緩，甚至已經沒有再進步了。 當不斷使用相同的技術做事情時，或許相當得心應手。但你也要開始注意，自己在職場上的不可或缺性。 ">
+    <meta property="og:description" content="在職場工作幾年後，你是否意識到自己在這領域的成長曲線越來越平緩，甚至已經沒有再進步了。 當不斷使用相同的技術做事情時，或許相當得心應手。但你也要開始注意，自己在職場上的不可或缺性。 " />
+    <meta property="twitter:description" content="在職場工作幾年後，你是否意識到自己在這領域的成長曲線越來越平緩，甚至已經沒有再進步了。 當不斷使用相同的技術做事情時，或許相當得心應手。但你也要開始注意，自己在職場上的不可或缺性。 " />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>成為前端工程師-Day8之CSS基礎 | Brady Yang&#39;s DevLife</title>
+    <title>習慣跳脫舒適圈，建立自己的職涯護城河 | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day8/">
+    <link rel="canonical" href="/2022/07/19/career/">
 
     
     
@@ -186,29 +186,21 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/%E8%81%B7%E6%B6%AF%E8%AD%B7%E5%9F%8E%E6%B2%B3" title="職涯護城河">
+                            職涯護城河
+                        </a>
+                        
                         <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="前端工程師">
                             前端工程師
                         </a>
                         
-                        <a class="tag" href="/tags/front-end" title="Front-end">
-                            Front-end
-                        </a>
-                        
-                        <a class="tag" href="/tags/javascript" title="Javascript">
-                            Javascript
-                        </a>
-                        
-                        <a class="tag" href="/tags/html" title="HTML">
-                            HTML
-                        </a>
-                        
-                        <a class="tag" href="/tags/css" title="CSS">
-                            CSS
+                        <a class="tag" href="/tags/%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="軟體工程師">
+                            軟體工程師
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day8之CSS基礎</h1>
-                    <h2 class="subheading">前端工程師養成</h2>
+                    <h1>習慣跳脫舒適圈，建立自己的職涯護城河</h1>
+                    <h2 class="subheading">追求在市場上合理的價值，提升自己的市場競爭力</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -216,7 +208,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Sunday, July 10, 2022
+                            Tuesday, July 19, 2022
                             
                             
                             
@@ -242,107 +234,44 @@
                 post-container">
 
                 
-                <p>身為一個前端工程師，除了HTML以外，還要知道如何透過CSS讓內容變得更佳優美。</p>
-<h1 id="css是什麼-身為前端工程師一定要知道的網頁開發基礎">CSS是什麼? 身為前端工程師一定要知道的網頁開發基礎</h1>
-<p>身為前端工程師，你一定要知道的三大語言分別為HTML、CSS、Javascript。
-前面幾篇我們已經提過HTML如何應用於網頁開發，今天我們就要帶大家進入CSS的世界。</p>
-<h2 id="css是什麼">CSS是什麼?</h2>
-<p>CSS為Cascading Style Sheets的縮寫，中文為階層式樣式表。</p>
-<p>CSS主要目的是用來美化我們的HTML。如果大家前面幾篇有跟著動手實作的話應該會發現，
-雖然透過HTML建立了一個網站，但是只有一些簡單的標題樣式根本就吸引不了人。
-此時，就需要CSS來提升我們網站的美感。</p>
-<h2 id="css怎麼寫">CSS怎麼寫?</h2>
-<p>首先，我們先簡單看一個範例。</p>
-<iframe height="300" style="width: 100%;" scrolling="no" title="第一個CSS" src="https://codepen.io/bradyyang-tw/embed/xxWOOPV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/xxWOOPV">
-  第一個CSS</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-<p>可以發現我們透過以下的CSS語法，將<code>&lt;h1&gt;</code>標題變成背景為黑色且字體為白色。</p>
-<pre tabindex="0"><code>h1 {
-  color: white;
-  background: black;
-}
-</code></pre><ul>
-<li><code>&lt;h1&gt;</code> 在HTML稱作標籤，但在CSS稱作選擇器(Selector)。</li>
-<li><code>color</code> 及 <code>background</code> 分別為更換字體顏色及背景顏色，在CSS稱為屬性(Property)。</li>
-<li><code>white</code> 及 <code>black</code> 為我們定義的顏色，在CSS稱為設定值(Value)。</li>
-<li>賦予每個Proterty值時，要用<code>;</code>做結尾，以表示樣式設定完畢。</li>
-</ul>
-<p>範例是將<code>&lt;h1&gt;</code>裡面的內容做顏色的更換，今天若想變更其它標籤的CSS，只需要將<code>&lt;h1&gt;</code>更換為其它標籤即可。</p>
-<blockquote>
-<p>由於上述CSS是根據標籤來做網站的美化，因此又稱作標籤選擇器。除了標籤選擇器之外，我們還可以用其它方法來套用CSS，這個後續我們會再介紹。</p>
-</blockquote>
-<blockquote>
-<p>CSS裡面的Property是根據HTML的標籤有沒有支援，如果今天這個標籤沒有支援此Property，就不會呈現你想要的樣式。之後我們也會教大家如何知道我的標籤有沒有支援此Property。</p>
-</blockquote>
-<h2 id="如何在網頁內加入css">如何在網頁內加入CSS?</h2>
-<p>剛剛我們寫好了一隻CSS，主要是針對<code>&lt;h1&gt;</code>的顏色更換。那麼要怎麼樣讓網站知道這個CSS的存在呢?以下教大家三個方法：</p>
-<h3 id="方法一透過style">方法一：透過<code>style</code></h3>
-<p>我們可以透過<code>&lt;style&gt;</code>的標籤將CSS的內容寫在裡面，最後將整個<code>&lt;style&gt;</code>放在<code>&lt;head&gt;</code>或<code>&lt;body&gt;</code>裡面。
-此方法常用於只有一個HTML檔案時，可以直接將CSS寫在一起，又稱作Internal CSS。</p>
-<pre tabindex="0"><code>&lt;style&gt;
-    h1 {
-      color: white;
-      background: black;
-    }
-  &lt;/style&gt;
-</code></pre><p>以下為將<code>&lt;style&gt;</code>放到<code>&lt;head&gt;</code>：</p>
-<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;style&gt;
-    h1 {
-      color: white;
-      background: black;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;這是我的第一個CSS&lt;/h1&gt;
-  
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><blockquote>
-<p>若要將 <code>&lt;style&gt;</code>放到<code>&lt;body&gt;</code>內，要注意你要變更樣式的標籤是否在<code>&lt;style&gt;</code>之後，否則會沒有樣式的效果。</p>
-</blockquote>
-<h3 id="方法二透過link讀取外部檔案">方法二：透過<code>link</code>讀取外部檔案</h3>
-<p>假設今天我們的網站根據不同情況，想要呈現不同的樣式，我們就可以建立多個CSS樣式並根據情況選擇要讀取哪一個CSS檔案。
-此方法又稱為External CSS。</p>
-<p>首先我們在<a href="https://bradyyang-tw.github.io/frontend/Day3/">Day3</a> 建立的project資料夾下，將CSS寫在一個名為style.css的檔案。
-
-  <img src="https://i.imgur.com/5cNvEFj.png" alt="">
-
-</p>
-<p>接著，透過<code>&lt;link&gt;</code>將該檔案引入HTML內。
-由於style.css與index.html都是在同一層目錄，所以可以直接在href打上CSS檔名。</p>
-<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
-</code></pre><p>以下為將<code>&lt;link&gt;</code>放到<code>&lt;head&gt;</code>：</p>
-<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;這是我的第一個CSS&lt;/h1&gt;
-  
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h3 id="方法三透過標籤內的style屬性">方法三：透過標籤內的style屬性</h3>
-<p>今天我們也可以直接透過標籤內的style屬性，來呈現想要的樣式。
-由於是直接寫在標籤內，故又稱為Inline CSS。</p>
-<pre tabindex="0"><code>&lt;h1 style=&#34;color:white;background:black;&#34;&gt;這是我的第一個CSS&lt;/h1&gt;
-</code></pre><h2 id="總結">總結</h2>
-<p>今天簡單的帶大家認識CSS是什麼以及如何使用，大家可以先將上述方法實際練習一下。
-先對CSS有個初步的認識，之後我們會再針對CSS做更深入的介紹。</p>
+                <p>在職場工作幾年後，你是否意識到自己在這領域的成長曲線越來越平緩，甚至已經沒有再進步了。
+當不斷使用相同的技術做事情時，或許相當得心應手。但你也要開始注意，自己在職場上的不可或缺性。</p>
+<h2 id="職涯護城河是什麼">職涯護城河是什麼?</h2>
+<p>護城河顧名思義，古時候的人會在城堡外建立人造河，以防止敵人入侵。
+若將此概念應用在職場上，就稱做職涯護城河。</p>
+<h2 id="為什麼要建立職涯護城河">為什麼要建立職涯護城河?</h2>
+<p>建立職涯護城河主要目的有兩點：</p>
+<ol>
+<li>保持自己在市場的競爭力</li>
+<li>了解自己在市場的價值</li>
+</ol>
+<p>由於我本身是軟體工程師，所以我以軟體工程師為例子。</p>
+<p>在現在科技進步的時代，幾乎所有的知識都可以透過網路來學習。坊間也越來越多老師出來開課。
+不管是不是相關科系，基本上只要願意學習，都可以在短時間內獲得相關的技能。
+當越來越多人都會相同的技術，自己又沒有成長的話，那麼自身的價值就會逐步減少。
+因此，我時常關注著市場上相關職缺是否有不理解的技術，若有就安排時間去學習，以提升自己在市場的競爭力。</p>
+<h2 id="怎麼建立職涯護城河">怎麼建立職涯護城河?</h2>
+<p>以下為建立職涯護城河三個基本方式：</p>
+<ol>
+<li>
+<p>設定好目標：<br>
+首先，你得先設立一個目標。你可以想想未來10年後你想要成為什麼樣子。
+然後，去看看如果要達到此目標還欠缺哪些東西。並提早規劃補足這些欠缺的項目。</p>
+</li>
+<li>
+<p>保持開放的心：<br>
+以軟體工程師來說，技術是不斷的在變化，必須保持關注軟體發展的最新趨勢，並根據目標評估是否需要去學習。若是將來很有潛力的技術，就可以規畫時間去學習。
+或許既有的技術也能達到相同成果。但學習有潛力的技術對自己也是百利無一害。</p>
+</li>
+<li>
+<p>定期去面試：<br>
+定期去面試有很多好處，你可以了解現在市場上要的人才、技術是什麼。也可以透過面試，了解目前自己在市場上的價值(合理的薪資)，以作為談判的籌碼。</p>
+</li>
+</ol>
+<h2 id="結論">結論</h2>
+<p>其實所謂的職涯護城河，簡單來說就是提升自己的不可替代性。
+不論是軟體工程師，還是其他職業，都要想辦法增加自己在市場上的價值，
+這樣一來可以保護自己在公司上的地位，二來可以爭取在市場上合理的薪資。</p>
 
 
                 
@@ -351,15 +280,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/frontend/Day7/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day7之Emmet工具">&larr;
+                        <a href="/frontend/Day10/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day10之常用的CSS選擇器(進階篇)">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/frontend/Day9/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day9之常用的CSS選擇器(簡單篇)">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
