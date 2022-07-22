@@ -6,7 +6,16 @@
     <description>Recent content in CSS on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day11之CSS常見錯誤</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day11/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day11/</guid>
+      <description>看過Day8、Day9、Day10三篇文章的朋友， 想必已經知道如何透過CSS來增加網站的樣式。跟所有程式語言一樣，當你在建立網站時，你會經常</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day10之常用的CSS選擇器(進階篇)</title>
       <link>https://BradyYang-tw.github.io/frontend/Day10/</link>
