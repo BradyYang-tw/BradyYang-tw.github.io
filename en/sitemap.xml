@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://BradyYang-tw.github.io/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://BradyYang-tw.github.io/categories/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -29,25 +29,25 @@
                 />
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/css/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/categories/devlife/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/front-end/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/html/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/javascript/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/post/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -60,7 +60,10 @@
                 />
   </url><url>
     <loc>https://BradyYang-tw.github.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://BradyYang-tw.github.io/frontend/Day12/</loc>
+    <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://BradyYang-tw.github.io/frontend/Day11/</loc>
     <lastmod>2022-07-22T00:00:00+00:00</lastmod>

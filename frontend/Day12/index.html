@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day11之CSS常見錯誤" />
-    <meta property="og:title" content="成為前端工程師-Day11之CSS常見錯誤" />
-    <meta property="twitter:title" content="成為前端工程師-Day11之CSS常見錯誤" />
+    <meta name="title" content="成為前端工程師-Day12之網站排版(容器介紹)" />
+    <meta property="og:title" content="成為前端工程師-Day12之網站排版(容器介紹)" />
+    <meta property="twitter:title" content="成為前端工程師-Day12之網站排版(容器介紹)" />
     
 
     
-    <meta name="description" content="學習如何查找CSS錯誤，對於日後的網頁開發相當重要，因為你可以快速的知道問題在哪邊。">
-    <meta property="og:description" content="學習如何查找CSS錯誤，對於日後的網頁開發相當重要，因為你可以快速的知道問題在哪邊。" />
-    <meta property="twitter:description" content="學習如何查找CSS錯誤，對於日後的網頁開發相當重要，因為你可以快速的知道問題在哪邊。" />
+    <meta name="description" content="在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。">
+    <meta property="og:description" content="在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。" />
+    <meta property="twitter:description" content="在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>成為前端工程師-Day11之CSS常見錯誤 | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day12之網站排版(容器介紹) | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day11/">
+    <link rel="canonical" href="/frontend/Day12/">
 
     
     
@@ -207,8 +207,8 @@
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day11之CSS常見錯誤</h1>
-                    <h2 class="subheading">從錯誤中學習，讓自己成為更優秀的工程師</h2>
+                    <h1>成為前端工程師-Day12之網站排版(容器介紹)</h1>
+                    <h2 class="subheading">學會容器的觀念，打好設計排版的基礎</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -216,7 +216,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Friday, July 22, 2022
+                            Tuesday, July 26, 2022
                             
                             
                             
@@ -242,43 +242,42 @@
                 post-container">
 
                 
-                <p>看過<a href="https://bradyyang-tw.github.io/frontend/Day8/">Day8</a>、<a href="https://bradyyang-tw.github.io/frontend/Day9/">Day9</a>、<a href="https://bradyyang-tw.github.io/frontend/Day10/">Day10</a>三篇文章的朋友，
-想必已經知道如何透過CSS來增加網站的樣式。跟所有程式語言一樣，當你在建立網站時，你會經常發現網站沒有呈現你想要的效果。
-此時，你得先放輕鬆，然後檢查是否犯了以下幾種常見的CSS錯誤。</p>
-<h2 id="1-檔案名稱路徑錯誤">1. 檔案名稱(路徑)錯誤</h2>
-<p>首先，常犯的錯誤之一就是CSS檔案名稱打錯。
-有時候，也可能是檔案路徑打錯。</p>
+                <p>在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。</p>
+<h2 id="容器介紹">容器介紹</h2>
+<p>在進行網站排版前，要先理解一個觀念。那就是網站是由多個容器組合而成的。
+以Google搜尋的網站為例子，可以看到這個頁面至少切割成5塊區域。這個區塊就是容器，且容器內也可以再放容器。基本上就把它想成是收納箱裡還有收納盒的概念。</p>
+<p>通常設計一個網站，都會根據需求先用大容器畫出特定範圍，在使用小容器呈現功能。
+以Logo這個容器為例，他先用大容器設計出這個空間是專門放Logo的，在使用圖片<code>&lt;img&gt;</code>作為小容器，以呈現Google的Logo。
+
+  <img src="https://i.imgur.com/n82kJPV.png" alt="">
+
+</p>
+<h2 id="常用的容器排版標籤">常用的容器排版標籤</h2>
+<p>知道網頁的設計方式是大的容器搭配小的容器產生出來的效果後，接著就是要向大家介紹，常用來做容器排版的標籤有哪些。</p>
+<h3 id="1div">1.div</h3>
+<p><code>&lt;div&gt;</code>全名為division，主要是分區的意思。我可以透過三個<code>&lt;div&gt;</code>區分要呈現的內容並使用CSS分別做些設計，來製作一個含有網站名稱、內容及版權的網站。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="div" src="https://codepen.io/bradyyang-tw/embed/bGvoVRO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/bGvoVRO">
+  div</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3 id="2semantic-elements">2.Semantic Elements</h3>
+<p>因為常見的網站樣式的基本架構都差不多，於是在HTML5就增加了語意元素(Semantic Elements)，
+其中針對排版的部分提供了<code>&lt;header&gt;</code>、<code>&lt;section&gt;</code>、<code>&lt;footer&gt;</code>、<code>&lt;aside&gt;</code>、<code>&lt;nav&gt;</code>及<code>&lt;article&gt;</code>幾個標籤。
+根據以下範例可以看到，我們將<code>&lt;div&gt;</code>更換為Semantic Elements並呈現相同的網站風格。</p>
 <blockquote>
-<p>趕快檢查看看檔案名稱或檔案路徑是否正確吧!</p>
+<p>Semantic Elements主要目的是希望可以快速了解這段HTML的目的為何，相較之下，若是都使用 <code>&lt;div&gt;</code>可閱讀性就比較差。</p>
 </blockquote>
-<h2 id="2-css內的單字拼錯或格式錯誤">2. CSS內的單字拼錯或格式錯誤</h2>
-<p>再來，最常見的問題應該就是單字拼錯或格式錯誤。
-這邊來教大家如何查找錯誤。</p>
-<h3 id="第一步開啟網頁開發者工具">第一步：開啟網頁開發者工具</h3>
-<p>使用Windows的朋友只需要按F12。<br>
-若是使用OS系統的朋友，可以在網頁上按右鍵 &gt; 顯示網頁原始碼。
-此時，你會看到以下畫面。
-
-  <img src="https://i.imgur.com/e7ZlPgZ.png" alt="">
-
-</p>
-<blockquote>
-<p>透過網站檢查看css有沒有更動來除錯</p>
-</blockquote>
-<h3 id="第二步選擇網頁上沒有預期效果的內容">第二步：選擇網頁上沒有預期效果的內容</h3>
-<p>點擊左上方箭頭並選擇網頁畫面。
-
-  <img src="https://i.imgur.com/95M6odM.png" alt="">
-
-</p>
-<h3 id="第三步查找問題的原因">第三步：查找問題的原因</h3>
-<p>根據以下範例，可以知道CSS的Value瀏覽器看不懂。仔細檢查發現是背景顏色少打了一個字母。
-
-  <img src="https://i.imgur.com/8EOcrB7.png" alt="">
-
-</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Semantic Elements" src="https://codepen.io/bradyyang-tw/embed/LYdzprz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/LYdzprz">
+  Semantic Elements</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3 id="3frameworks">3.Frameworks</h3>
+<p>許多前端Framework也都提供它們的排版方式。比如以ElementPlus為例，
+針對排版的部分提供了<code>&lt;el-container&gt;</code>、<code>&lt;el-header&gt;</code>、<code>&lt;el-aside&gt;</code>及<code>&lt;el-footer&gt;</code>幾個標籤讓大家使用。</p>
 <h2 id="總結">總結</h2>
-<p>今天主要介紹了如何查找CSS沒有效果的問題，之後我們就要正式開始用CSS來進行網站排版囉。</p>
+<p>今天先教大家容器的概念，這對以後網頁排版相當重要。後續會在逐步向大家介紹排版的一些技巧。</p>
 
 
                 
@@ -287,15 +286,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2022/07/19/career/" data-toggle="tooltip" data-placement="top" title="習慣跳脫舒適圈，建立自己的職涯護城河">&larr;
+                        <a href="/frontend/Day11/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day11之CSS常見錯誤">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/frontend/Day12/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day12之網站排版(容器介紹)">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

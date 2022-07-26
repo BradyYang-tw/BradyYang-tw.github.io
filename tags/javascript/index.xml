@@ -6,7 +6,16 @@
     <description>Recent content in Javascript on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day12之網站排版(容器介紹)</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day12/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day12/</guid>
+      <description>在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。 容器介紹 在進行網</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day11之CSS常見錯誤</title>
       <link>https://BradyYang-tw.github.io/frontend/Day11/</link>
