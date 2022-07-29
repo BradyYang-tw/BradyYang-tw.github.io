@@ -6,7 +6,16 @@
     <description>Recent content in Front-end on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成為前端工程師-Day13之網站排版(CSS Reset)</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day13/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day13/</guid>
+      <description>身為一個前端開發人員，確保所有瀏覽器都呈現我們的設計，算是一個基本的要求。 以下我寫了一個簡單的Hello Web並使用4個不同的瀏覽器開啟HT</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day12之網站排版(容器介紹)</title>
       <link>https://BradyYang-tw.github.io/frontend/Day12/</link>

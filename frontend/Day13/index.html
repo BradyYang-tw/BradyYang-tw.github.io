@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="成為前端工程師-Day12之網站排版(容器介紹)" />
-    <meta property="og:title" content="成為前端工程師-Day12之網站排版(容器介紹)" />
-    <meta property="twitter:title" content="成為前端工程師-Day12之網站排版(容器介紹)" />
+    <meta name="title" content="成為前端工程師-Day13之網站排版(CSS Reset)" />
+    <meta property="og:title" content="成為前端工程師-Day13之網站排版(CSS Reset)" />
+    <meta property="twitter:title" content="成為前端工程師-Day13之網站排版(CSS Reset)" />
     
 
     
-    <meta name="description" content="在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。">
-    <meta property="og:description" content="在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。" />
-    <meta property="twitter:description" content="在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。" />
+    <meta name="description" content="瀏覽器本身會提供網站基本的CSS的樣式，而每個瀏覽器都有他們自己的CSS風格，因此造成部分網頁效果會不相同。 這時，我們就可以使用CSS Reset，清空所有瀏覽器的CSS效果，再依照我們的設計來加入CSS。">
+    <meta property="og:description" content="瀏覽器本身會提供網站基本的CSS的樣式，而每個瀏覽器都有他們自己的CSS風格，因此造成部分網頁效果會不相同。 這時，我們就可以使用CSS Reset，清空所有瀏覽器的CSS效果，再依照我們的設計來加入CSS。" />
+    <meta property="twitter:description" content="瀏覽器本身會提供網站基本的CSS的樣式，而每個瀏覽器都有他們自己的CSS風格，因此造成部分網頁效果會不相同。 這時，我們就可以使用CSS Reset，清空所有瀏覽器的CSS效果，再依照我們的設計來加入CSS。" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>成為前端工程師-Day12之網站排版(容器介紹) | Brady Yang&#39;s DevLife</title>
+    <title>成為前端工程師-Day13之網站排版(CSS Reset) | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/frontend/Day12/">
+    <link rel="canonical" href="/frontend/Day13/">
 
     
     
@@ -207,8 +207,8 @@
                         </a>
                         
                     </div>
-                    <h1>成為前端工程師-Day12之網站排版(容器介紹)</h1>
-                    <h2 class="subheading">學會容器的觀念，打好設計排版的基礎</h2>
+                    <h1>成為前端工程師-Day13之網站排版(CSS Reset)</h1>
+                    <h2 class="subheading">清除瀏覽器預設樣式-CSS Reset</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -216,7 +216,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Tuesday, July 26, 2022
+                            Thursday, July 28, 2022
                             
                             
                             
@@ -242,42 +242,74 @@
                 post-container">
 
                 
-                <p>在開始學習網頁排版前，必須先釐清一些網站設計的觀念。這樣在正式排版時，才不會時常遇到畫面沒有辦法對齊或沒辦法放到想要的位置。</p>
-<h2 id="容器介紹">容器介紹</h2>
-<p>在進行網站排版前，要先理解一個觀念。那就是網站是由多個容器組合而成的。
-以Google搜尋的網站為例子，可以看到這個頁面至少切割成5塊區域。這個區塊就是容器，且容器內也可以再放容器。基本上就把它想成是收納箱裡還有收納盒的概念。</p>
-<p>通常設計一個網站，都會根據需求先用大容器畫出特定範圍，在使用小容器呈現功能。
-以Logo這個容器為例，他先用大容器設計出這個空間是專門放Logo的，在使用圖片<code>&lt;img&gt;</code>作為小容器，以呈現Google的Logo。
+                <p>身為一個前端開發人員，確保所有瀏覽器都呈現我們的設計，算是一個基本的要求。
+以下我寫了一個簡單的Hello Web並使用4個不同的瀏覽器開啟HTML。
+可以發現好像有些瀏覽器呈現出來的效果不太一樣。右邊兩個瀏覽器的字體好像比較粗。
 
-  <img src="https://i.imgur.com/n82kJPV.png" alt="">
+  <img src="https://i.imgur.com/7rEO09v.png" alt="">
 
 </p>
-<h2 id="常用的容器排版標籤">常用的容器排版標籤</h2>
-<p>知道網頁的設計方式是大的容器搭配小的容器產生出來的效果後，接著就是要向大家介紹，常用來做容器排版的標籤有哪些。</p>
-<h3 id="1div">1.div</h3>
-<p><code>&lt;div&gt;</code>全名為division，主要是分區的意思。我可以透過三個<code>&lt;div&gt;</code>區分要呈現的內容並使用CSS分別做些設計，來製作一個含有網站名稱、內容及版權的網站。</p>
-<iframe height="300" style="width: 100%;" scrolling="no" title="div" src="https://codepen.io/bradyyang-tw/embed/bGvoVRO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/bGvoVRO">
-  div</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-<h3 id="2semantic-elements">2.Semantic Elements</h3>
-<p>因為常見的網站樣式的基本架構都差不多，於是在HTML5就增加了語意元素(Semantic Elements)，
-其中針對排版的部分提供了<code>&lt;header&gt;</code>、<code>&lt;section&gt;</code>、<code>&lt;footer&gt;</code>、<code>&lt;aside&gt;</code>、<code>&lt;nav&gt;</code>及<code>&lt;article&gt;</code>幾個標籤。
-根據以下範例可以看到，我們將<code>&lt;div&gt;</code>更換為Semantic Elements並呈現相同的網站風格。</p>
+<p>因為瀏覽器本身會提供網站基本的CSS的樣式，而每個瀏覽器都有他們自己的CSS風格，因此造成部分網頁效果會不相同。
+這時，我們就可以使用CSS Reset，清空所有瀏覽器的CSS效果，再依照我們的設計來加入CSS。</p>
+<h2 id="meyerweb">meyerweb</h2>
+<p><a href="https://meyerweb.com/eric/tools/css/reset/">meyerweb</a> 是<a href="https://meyerweb.com/eric/">Eric A. Meyer</a> 的個人網站，其整理出一份世界上多數人常用的CSS檔案，可以將瀏覽器上所有的CSS都清空。
+以下CSS語法為該網站提供，只需要將其套用到網站即可。</p>
 <blockquote>
-<p>Semantic Elements主要目的是希望可以快速了解這段HTML的目的為何，相較之下，若是都使用 <code>&lt;div&gt;</code>可閱讀性就比較差。</p>
+<p>不知道怎麼套用的朋友可以參考<a href="https://bradyyang-tw.github.io/frontend/Day8/">Day8</a> 內的 &ldquo;如何在網頁內加入CSS&rdquo;</p>
 </blockquote>
-<iframe height="300" style="width: 100%;" scrolling="no" title="Semantic Elements" src="https://codepen.io/bradyyang-tw/embed/LYdzprz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/LYdzprz">
-  Semantic Elements</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-<h3 id="3frameworks">3.Frameworks</h3>
-<p>許多前端Framework也都提供它們的排版方式。比如以ElementPlus為例，
-針對排版的部分提供了<code>&lt;el-container&gt;</code>、<code>&lt;el-header&gt;</code>、<code>&lt;el-aside&gt;</code>及<code>&lt;el-footer&gt;</code>幾個標籤讓大家使用。</p>
-<h2 id="總結">總結</h2>
-<p>今天先教大家容器的概念，這對以後網頁排版相當重要。後續會在逐步向大家介紹排版的一些技巧。</p>
+<pre tabindex="0"><code>/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: &#39;&#39;;
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+</code></pre><h2 id="總結">總結</h2>
+<p>今天主要介紹了CSS Reset，其實有很多CSS Reset的方法，甚至也可以自己去寫CSS Reset。</p>
+<p>除了CSS Reset另一個常用的是Normalize CSS。
+Normalize CSS主要是會保留一些常見CSS樣式的設定，像<code>&lt;h1&gt;</code>之類的常用的標籤。而不會將全部CSS都清除掉，這部分就沒多做介紹了。
+清除預設樣式後，我們就要學習設計排版的小技巧了。</p>
 
 
                 
@@ -286,15 +318,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/frontend/Day11/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day11之CSS常見錯誤">&larr;
+                        <a href="/frontend/Day12/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day12之網站排版(容器介紹)">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/frontend/Day13/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day13之網站排版(CSS Reset)">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
