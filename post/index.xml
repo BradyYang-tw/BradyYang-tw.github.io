@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>成為前端工程師-Day14之網站排版(常用的CSS property)</title>
-      <link>https://BradyYang-tw.github.io/frontend/Day14/</link>
-      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/frontend/Day14/</guid>
-      <description>在Day13 我們已經將瀏覽器預設的CSS樣式給清空了。今天，就是要教大家在排版設計上，有哪些常用的CSS property。 display 在介紹displ</description>
-    </item>
-    
-    <item>
       <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day1</title>
       <link>https://BradyYang-tw.github.io/vue/CoV-2-Self-Test-Map/Day1/</link>
       <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
