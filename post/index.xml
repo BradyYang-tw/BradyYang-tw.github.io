@@ -6,7 +6,34 @@
     <description>Recent content in Posts on Brady Yang&#39;s DevLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2</title>
+      <link>https://BradyYang-tw.github.io/vue/CoV-2-Self-Test-Map/Day2/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/vue/CoV-2-Self-Test-Map/Day2/</guid>
+      <description>今天會先根據Day1 的設計，將網頁的基礎版型建立出來。 Vue專案建置 我是透過Vite建置工具來建立我的Vue專案，可以參考手把手用Vue建立</description>
+    </item>
+    
+    <item>
+      <title>成為前端工程師-Day14之網站排版(常用的CSS property)</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day14/</link>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day14/</guid>
+      <description>在Day13 我們已經將瀏覽器預設的CSS樣式給清空了。今天，就是要教大家在排版設計上，有哪些常用的CSS property。 display 在介紹displ</description>
+    </item>
+    
+    <item>
+      <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day1</title>
+      <link>https://BradyYang-tw.github.io/vue/CoV-2-Self-Test-Map/Day1/</link>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/vue/CoV-2-Self-Test-Map/Day1/</guid>
+      <description>前陣子因為疫情的關係口罩地圖及快篩地圖提供了民眾便利的查詢系統。因此，我希望練習幾個常用的地圖設計，並透過Vue來建立此系統。 Layout 以下為我的L</description>
+    </item>
+    
     <item>
       <title>成為前端工程師-Day13之網站排版(CSS Reset)</title>
       <link>https://BradyYang-tw.github.io/frontend/Day13/</link>

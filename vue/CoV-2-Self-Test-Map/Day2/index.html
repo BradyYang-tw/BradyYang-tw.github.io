@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="NHfQLSue3E7cs8YZMG13M-d8kTZBFBsCYiN7H7-ueZE" />
+
+    
+    <meta property="og:site_name" content="Brady Yang&#39;s DevLife">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://BradyYang-tw.github.io/img/header2.jpg">
+    <meta property="twitter:image" content="https://BradyYang-tw.github.io/img/header2.jpg" />
+    
+
+    
+    <meta name="title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2" />
+    <meta property="og:title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2" />
+    <meta property="twitter:title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2" />
+    
+
+    
+    <meta name="description" content="根據設計建立網站基本版型。">
+    <meta property="og:description" content="根據設計建立網站基本版型。" />
+    <meta property="twitter:description" content="根據設計建立網站基本版型。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
+    <link rel="shortcut icon" href="/img/me.ico">
+
+    <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2 | Brady Yang&#39;s DevLife</title>
+
+    <link rel="canonical" href="/vue/CoV-2-Self-Test-Map/Day2/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+	
+	
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6JC6GS9P9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J6JC6GS9P9');
+</script>
+	
+	
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1019521987701907"
+     crossorigin="anonymous"></script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Brady Yang&#39;s DevLife</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/devlife">devlife</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/vue">vue</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/devship.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/vue" title="Vue">
+                            Vue
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E5%BF%AB%E7%AF%A9%E8%A9%A6%E5%8A%91%E6%9F%A5%E8%A9%A2" title="快篩試劑查詢">
+                            快篩試劑查詢
+                        </a>
+                        
+                    </div>
+                    <h1>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2</h1>
+                    <h2 class="subheading">Vue專案建立及Layout實作</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                    &#34;Brady Yang&#34;
+                             
+                            on 
+                            Monday, August 1, 2022
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>今天會先根據<a href="https://bradyyang-tw.github.io/vue/CoV-2-Self-Test-Map/Day1">Day1</a> 的設計，將網頁的基礎版型建立出來。</p>
+<h2 id="vue專案建置">Vue專案建置</h2>
+<p>我是透過Vite建置工具來建立我的Vue專案，可以參考<a href="https://bradyyang-tw.github.io/vue/Day1/">手把手用Vue建立第一個網站</a> ，這邊我就不再撰寫一遍了。</p>
+<h2 id="layout建置">Layout建置</h2>
+<p>我是透過SFC進行開發，所以HTML、JS、CSS都放在同一個檔案裡面。專案裡面會有兩個檔案App.vue及main.js。</p>
+<p>main.js主要是根據App.vue創建一個Vue的應用程式，這邊只需要先更改App.vue，將我們設計好的架構放在這個檔案裡面。</p>
+<p>Vue檔案的<code>&lt;template&gt;</code>是用來呈現HTML，在此使用HTML5的Layout Element<code>&lt;head&gt;</code>、<code>&lt;main&gt;</code>、<code>&lt;footer&gt;</code>來設計Layout。</p>
+<p>在<code>&lt;style&gt;</code>下，定義畫面CSS的高度及背景顏色。</p>
+<blockquote>
+<p>這邊保有專案本來的css設計<code>@import &quot;./assets/base.css&quot;;</code> 照理說應該要全部清空自己拉，但是就偷懶一下!</p>
+</blockquote>
+<pre tabindex="0"><code>                                                                                                                                 App.vue
+
+&lt;template&gt;
+  &lt;header&gt;Header
+  &lt;/header&gt;
+  &lt;main&gt; main
+  &lt;/main&gt;
+  &lt;footer&gt;footer
+  &lt;/footer&gt;
+&lt;/template&gt;
+
+&lt;style&gt;
+@import &#34;./assets/base.css&#34;;
+
+header {
+  background-color: rgb(255, 174, 0);
+  height: 80px;
+}
+
+main{
+  height: 820px;
+}
+
+footer {
+  height: 30px;
+  background-color: rgb(255, 174, 0);
+}
+</code></pre><h2 id="成果">成果</h2>
+<p>看一下在電腦跟手機上的效果如何。發現在手機模式下，footer需要透過滾動軸才能看到，這邊暫時先不調整。等到實際擺放地圖後，再來看看效果如何。
+
+  <img src="https://i.imgur.com/GgbLAlJ.png" alt="">
+
+</p>
+<h2 id="總結">總結</h2>
+<p>今天先實作了網站的Layout，下次會實作Header的內容，大家也可以跟我一起建立看看唷。</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/frontend/Day14/" data-toggle="tooltip" data-placement="top" title="成為前端工程師-Day14之網站排版(常用的CSS property)">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/css" title="css">
+                            css
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/front-end" title="front-end">
+                            front-end
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/html" title="html">
+                            html
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/javascript" title="javascript">
+                            javascript
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="前端工程師">
+                            前端工程師
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E6%88%90%E7%82%BA%E5%B7%A5%E7%A8%8B%E5%B8%AB" title="小白也能成為工程師">
+                            小白也能成為工程師
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E5%BF%AB%E7%AF%A9%E8%A9%A6%E5%8A%91%E6%9F%A5%E8%A9%A2" title="快篩試劑查詢">
+                            快篩試劑查詢
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E8%BD%89%E8%81%B7" title="轉職">
+                            轉職
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:punk6233@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/BradyYang-tw">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Brady Yang&#39;s DevLife" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Brady Yang&#39;s DevLife 2022
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6JC6GS9P9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J6JC6GS9P9');
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
