@@ -16,9 +16,9 @@
     
 
     
-    <meta name="title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2" />
-    <meta property="og:title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2" />
-    <meta property="twitter:title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2" />
+    <meta name="title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3" />
+    <meta property="og:title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3" />
+    <meta property="twitter:title" content="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Brady Yang&#39;s DevLife, Brady&#39;s Yang, HsinYu Yang, Brady">
     <link rel="shortcut icon" href="/img/me.ico">
 
-    <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2 | Brady Yang&#39;s DevLife</title>
+    <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3 | Brady Yang&#39;s DevLife</title>
 
-    <link rel="canonical" href="/vue/CoV-2-Self-Test-Map/Day2/">
+    <link rel="canonical" href="/vue/CoV-2-Self-Test-Map/Day3/">
 
     
     
@@ -195,8 +195,8 @@
                         </a>
                         
                     </div>
-                    <h1>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2</h1>
-                    <h2 class="subheading">Vue專案建立及Layout實作</h2>
+                    <h1>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3</h1>
+                    <h2 class="subheading">設計並實作Header</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -204,7 +204,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Monday, August 1, 2022
+                            Tuesday, August 2, 2022
                             
                             
                             
@@ -230,21 +230,182 @@
                 post-container">
 
                 
-                <p>今天會先根據<a href="https://bradyyang-tw.github.io/vue/CoV-2-Self-Test-Map/Day1">Day1</a> 的設計，將網頁的基礎版型建立出來。</p>
-<h2 id="vue專案建置">Vue專案建置</h2>
-<p>我是透過Vite建置工具來建立我的Vue專案，可以參考<a href="https://bradyyang-tw.github.io/vue/Day1/">手把手用Vue建立第一個網站</a> ，這邊我就不再撰寫一遍了。</p>
-<h2 id="layout建置">Layout建置</h2>
-<p>我是透過SFC進行開發，所以HTML、JS、CSS都放在同一個檔案裡面。專案裡面會有兩個檔案App.vue及main.js。</p>
-<p>main.js主要是根據App.vue創建一個Vue的應用程式，這邊只需要先更改App.vue，將我們設計好的架構放在這個檔案裡面。</p>
-<p>Vue檔案的<code>&lt;template&gt;</code>是用來呈現HTML，在此使用HTML5的Layout Element<code>&lt;head&gt;</code>、<code>&lt;main&gt;</code>、<code>&lt;footer&gt;</code>來設計Layout。</p>
-<p>在<code>&lt;style&gt;</code>下，定義畫面CSS的高度及背景顏色。</p>
-<blockquote>
-<p>這邊保有專案本來的css設計<code>@import &quot;./assets/base.css&quot;;</code> 照理說應該要全部清空自己拉，但是就偷懶一下!</p>
-</blockquote>
-<pre tabindex="0"><code>                                                                                                                                 App.vue
+                <p>常見的Header內容有Logo、網站名稱及一些功能按鈕等。</p>
+<h2 id="header-設計">Header 設計</h2>
+<p>由於我們這次的Side Project希望實作三種地圖設計方式，因此除了Logo、網站名稱外，我會設計三個按鈕來切換不同的地圖設計方法。
+以下是我希望在PC及手機上的Header畫面呈現。當畫面解析度變小時，功能按鈕會折行來顯示。
+
+  <img src="https://i.imgur.com/w0lB2Kq.png" alt="">
+
+</p>
+<h2 id="header建置">Header建置</h2>
+<p>首先，新增一個Header.vue以呈現Header裡面要放的內容，以下為完整的程式碼。</p>
+<pre tabindex="0"><code>                                                                                                                                Header.vue
+
+&lt;script setup&gt;
+defineProps({
+  msg: {
+    type: String,
+    required: true,
+  },
+});
+&lt;/script&gt;
 
 &lt;template&gt;
-  &lt;header&gt;Header
+  &lt;div class=&#34;logo-title&#34;&gt;
+    &lt;img alt=&#34;Test logo&#34; class=&#34;logo&#34; src=&#34;../assets/pcr-test.png&#34; /&gt;
+    &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&#34;#/OpenLayersMap&#34;&gt;OpenLayersMap&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;#/Leaftlet&#34;&gt;Leaftlet&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;#/GoogleMapApi&#34;&gt;GoogleMapApi&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+.logo-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: inherit; /* 移除超連結顏色 */
+  text-decoration: none; /* 移除超連結底線 */
+  list-style: none; /* 移除項目符號 */
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: white; /* 移除超連結顏色 */
+  font-size: 1.2rem;
+  text-decoration: none; /* 移除超連結底線 */
+  padding: 10px;
+}
+
+ul li:hover {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
+&lt;/style&gt;
+</code></pre><p>這邊將程式碼拆開來解釋一下，在HTML的部分，可分成兩個區塊分別為logo-title及nav。其目的是可以方便透過CSS的<code>display:flex</code>呈現PC及手機下我們要的效果。</p>
+<blockquote>
+<p>後續會增加display如何使用的內容。</p>
+</blockquote>
+<h3 id="logo-title">logo-title</h3>
+<p>先介紹在logo-title的部分，這區塊放了<code>&lt;img&gt;</code>及<code>&lt;h1&gt;</code>分別呈現Logo及網站名稱。</p>
+<pre tabindex="0"><code>  &lt;div class=&#34;logo-title&#34;&gt;
+    &lt;img alt=&#34;Test logo&#34; class=&#34;logo&#34; src=&#34;../assets/pcr-test.png&#34; /&gt;
+    &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+  &lt;/div&gt;
+</code></pre><p>在<code>&lt;img&gt;</code>我們將其類別命名為Logo，並透過CSS將其變成區塊元素並設定寬、高及上下的margin，以讓圖片可以對齊網站名稱。<br></p>
+<pre tabindex="0"><code>.logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+</code></pre><p>在<code>&lt;h1&gt;</code>這邊只是簡單加一個文字，只是這邊特別練習了一下Vue的props的功能，讓我們可以透過App.vue這個父元件取得要呈現的文字。
+因此，可以看到在<code>&lt;script&gt;</code>特別透過defineProps定義了msg以接收父元件傳過來的文字。</p>
+<pre tabindex="0"><code>&lt;script setup&gt;
+defineProps({
+  msg: {
+    type: String,
+    required: true,
+  },
+});
+&lt;/script&gt;
+</code></pre><blockquote>
+<p>未來Vue的教學我們會在特別教props的功能。</p>
+</blockquote>
+<p>針對<code>&lt;h1&gt;</code>的CSS主要是調整顏色及大小。</p>
+<pre tabindex="0"><code>h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: white;
+}
+</code></pre><p>最後透過CSS設計整個logo-title<code>&lt;div&gt;</code>的樣式，達到對齊不折行的效果。</p>
+<pre tabindex="0"><code>.logo-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+</code></pre><h3 id="nav">nav</h3>
+<p>在nav的部分，這區塊透過<code>&lt;ul&gt;</code>及<code>&lt;li&gt;</code>這個產生含有超連結的list的標籤，若不知道的朋友可以看一下<a href="https://bradyyang-tw.github.io/frontend/Day5/">這篇裡的ol、ul、li 列表</a> 。</p>
+<pre tabindex="0"><code>  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&#34;#/OpenLayersMap&#34;&gt;OpenLayersMap&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;#/Leaftlet&#34;&gt;Leaftlet&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#34;#/GoogleMapApi&#34;&gt;GoogleMapApi&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre><p>但是我們希望按鈕是要橫向併排呈現，因此透過CSS的display、justify-content、flex-wrap達到併排呈現且不折行的效果。
+此外，由於我們是透過超連結來讓網站可以換頁，超連結本身具有CSS的樣式，
+我們必須將其CSS移除。</p>
+<blockquote>
+<p>如何移除超連結樣式，可以參考以下程式碼的註解。</p>
+</blockquote>
+<pre tabindex="0"><code>ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: inherit; /* 移除超連結顏色 */
+  text-decoration: none; /* 移除超連結底線 */
+  list-style: none; /* 移除項目符號 */
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: white; /* 移除超連結顏色 */
+  font-size: 1.2rem;
+  text-decoration: none; /* 移除超連結底線 */
+  padding: 10px;
+}
+</code></pre><p>最後，透過ul li:hover增加當滑鼠移動到button時，會變更背景及文字顏色等效果。</p>
+<pre tabindex="0"><code>ul li:hover {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
+</code></pre><h3 id="appvue">App.vue</h3>
+<p>最後，在App.vue新增<code>&lt;script&gt;</code>將Header.vue這個組件引用進來並加入到先前設計<code>&lt;header&gt;</code> Layout的裡面。
+前面有提到<code>&lt;Header&gt;</code>需要App.vue提供標題內容，在此透過<code>msg=&quot;快篩試劑查詢</code>將這段文字傳到<code>&lt;Header&gt;</code>呈現。</p>
+<p>在CSS我們透過display、justify-content、flex-wrap達到並排呈現且當畫面太小會折行的效果。也移除了高度的設定，因為設定高度當在手機畫面呈現折行時，
+會造成內容無法完整呈現。</p>
+<pre tabindex="0"><code>                                                                                                                                  App.vue
+&lt;script setup&gt;
+  import Header from &#34;./components/Header.vue&#34;;	
+&lt;/script&gt;                                                                                                                         
+
+&lt;template&gt;
+  &lt;header&gt;
+    &lt;Header msg=&#34;快篩試劑查詢&#34; /&gt;
   &lt;/header&gt;
   &lt;main&gt; main
   &lt;/main&gt;
@@ -256,8 +417,11 @@
 @import &#34;./assets/base.css&#34;;
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: rgb(255, 174, 0);
-  height: 80px;
 }
 
 main{
@@ -269,13 +433,13 @@ footer {
   background-color: rgb(255, 174, 0);
 }
 </code></pre><h2 id="成果">成果</h2>
-<p>看一下在電腦跟手機上的效果如何。發現在手機模式下，footer需要透過滾動軸才能看到，這邊暫時先不調整。等到實際擺放地圖後，再來看看效果如何。
+<p>以下為Header在電腦跟手機上的效果。
 
-  <img src="https://i.imgur.com/GgbLAlJ.png" alt="">
+  <img src="https://i.imgur.com/ggIy4GI.png" alt="">
 
 </p>
 <h2 id="總結">總結</h2>
-<p>今天先實作了網站的Layout，下次會實作Header的內容，大家也可以跟我一起建立看看唷。</p>
+<p>今天先實作了網站的Header，下次會實作Router，讓我們點擊按鈕時，可以變更main的內容。</p>
 
 
                 
@@ -284,15 +448,10 @@ footer {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/vue/CoV-2-Self-Test-Map/Day1/" data-toggle="tooltip" data-placement="top" title="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day1">&larr;
+                        <a href="/vue/CoV-2-Self-Test-Map/Day2/" data-toggle="tooltip" data-placement="top" title="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/vue/CoV-2-Self-Test-Map/Day3/" data-toggle="tooltip" data-placement="top" title="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
