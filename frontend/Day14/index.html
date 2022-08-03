@@ -129,10 +129,6 @@
                     
 
                     
-		    <li>
-                        <a href="/search"><i class="fa fa-search"></i></a>
-		    </li>
-                    
                 </ul>
             </div>
         </div>
@@ -216,7 +212,7 @@
                                     &#34;Brady Yang&#34;
                              
                             on 
-                            Sunday, July 31, 2022
+                            Tuesday, August 2, 2022
                             
                             
                             
@@ -244,12 +240,81 @@
                 
                 <p>在<a href="https://bradyyang-tw.github.io/frontend/Day13/">Day13</a> 我們已經將瀏覽器預設的CSS樣式給清空了。今天，就是要教大家在排版設計上，有哪些常用的CSS property。</p>
 <h2 id="display">display</h2>
-<p>在介紹display</p>
+<p>在排版上最常用的CSS property就是display，在介紹display之前，必須先讓大家理解HTML又可以分為區塊元素(block element)跟行內元素(inline element)。</p>
 <h3 id="區塊元素block">區塊元素(block)</h3>
+<p>常見的區塊元素比如<code>&lt;h1&gt;</code>、<code>&lt;div&gt;</code>、<code>&lt;p&gt;</code>等。</p>
+<p>區塊元素的特性：</p>
+<ul>
+<li>盡可能占滿整個螢幕</li>
+<li>另起一行來呈現內容</li>
+</ul>
+<p>透過以下範例，我們將背景變成黑色以呈現區塊元素占滿整個螢幕的特性。也可以發現每個區塊元素的內容都是從新的一行開始呈現。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="block VS inline" src="https://codepen.io/bradyyang-tw/embed/ZExrapR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/ZExrapR">
+  block VS inline</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 <h3 id="行內元素inline">行內元素(inline)</h3>
-<h3 id="區塊元素block-vs-行內元素inline">區塊元素(block) VS 行內元素(inline)</h3>
+<p>常見的行內元素有<code>&lt;a&gt;</code>、<code>&lt;span&gt;</code>等。</p>
+<p>行內元素的特性：</p>
+<ul>
+<li>主要是使用在段落裡面，與內容齊行</li>
+<li>沒有辦法調整寬、高</li>
+</ul>
+<p>透過以下範例，我們將杭內元素背景變成紅色，可以發現行內元素都是跟著段落作呈現。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="inline" src="https://codepen.io/bradyyang-tw/embed/mdxXqLO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/mdxXqLO">
+  inline</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3 id="display的使用">display的使用</h3>
+<p>上面簡單的介紹完區塊元素與行內元素後，或許大家心中有個疑問，那就是我有辦法變更元素的預定好的樣式嗎?答案是肯定的。
+今天我可以透過CSS的display特性，將標籤更改為區塊元素或行內元素。</p>
+<p>透過以下範例，可以看到本來<code>&lt;h1&gt;</code>應該要占滿整個畫面，但因為設定<code>display: inline;</code>使它變成行內元素，因此背景顏色不會占滿整個畫面了。
+相反，在超連結<code>&lt;a&gt;</code>的部分，透過<code>display: block;</code>，使其成為區塊元素，因此呈現整個畫面併另起新的一行作呈現。</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="css:display" src="https://codepen.io/bradyyang-tw/embed/OJvzjeK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/OJvzjeK">
+  css:display</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>display除了上述兩個設定方式外，這邊針對我常用的設定做介紹：</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>block</td>
+<td>將元素變更為區塊元素</td>
+</tr>
+<tr>
+<td>inline</td>
+<td>將元素變更為行內元素</td>
+</tr>
+<tr>
+<td>inline-block</td>
+<td>將元素變更為行內元素，但是可以設定寬、高</td>
+</tr>
+<tr>
+<td>flex</td>
+<td>將此元素變為區塊元素的容器，此用法常用於排版，我會在下一篇做更詳細介紹</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>這個<a href="https://www.w3schools.com/cssref/pr_class_display.asp">網站</a> 列出了display所有的使用方式，大家可以參考。</p>
+</blockquote>
 <h2 id="margin-vs-padding">margin VS padding</h2>
-<h2 id="div">div</h2>
+<p>margin及padding是兩個很常使用的CSS property，可以用來調整網頁內容的間隔。
+以下範例為一個段落，其文字內容</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="margin vs padding" src="https://codepen.io/bradyyang-tw/embed/JjLpMWR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bradyyang-tw/pen/JjLpMWR">
+  margin vs padding</a> by HsinYu, Yang (<a href="https://codepen.io/bradyyang-tw">@bradyyang-tw</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 <h2 id="總結">總結</h2>
 <p>今天主要介紹了CSS Reset，其實有很多CSS Reset的方法，甚至也可以自己去寫CSS Reset。</p>
 <p>除了CSS Reset另一個常用的是Normalize CSS。
@@ -263,15 +328,10 @@ Normalize CSS主要是會保留一些常見CSS樣式的設定，像<code>&lt;h1&
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/vue/CoV-2-Self-Test-Map/Day1/" data-toggle="tooltip" data-placement="top" title="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day1">&larr;
+                        <a href="/vue/CoV-2-Self-Test-Map/Day3/" data-toggle="tooltip" data-placement="top" title="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/vue/CoV-2-Self-Test-Map/Day2/" data-toggle="tooltip" data-placement="top" title="透過Vue建立健保特約機構家用快篩試劑查詢網站-Day2">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

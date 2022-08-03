@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BradyYang-tw.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>成為前端工程師-Day14之網站排版(常用的CSS property)</title>
+      <link>https://BradyYang-tw.github.io/frontend/Day14/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://BradyYang-tw.github.io/frontend/Day14/</guid>
+      <description>在Day13 我們已經將瀏覽器預設的CSS樣式給清空了。今天，就是要教大家在排版設計上，有哪些常用的CSS property。 display 在排版上最常用的</description>
+    </item>
+    
+    <item>
       <title>透過Vue建立健保特約機構家用快篩試劑查詢網站-Day3</title>
       <link>https://BradyYang-tw.github.io/vue/CoV-2-Self-Test-Map/Day3/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
@@ -198,29 +207,11 @@
     
     <item>
       <title></title>
-      <link>https://BradyYang-tw.github.io/search/placeholder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/search/placeholder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://BradyYang-tw.github.io/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://BradyYang-tw.github.io/top/about/</guid>
       <description>關於我 大家好，我是新宇，也可以叫我Brady。我是一位正在自學的軟體工程師兼新手爸爸。 寫部落格動機 老實說，軟體領域的技術不斷再更新，且更新速</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://BradyYang-tw.github.io/top/books/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://BradyYang-tw.github.io/top/books/</guid>
-      <description>Coming soon&amp;hellip;</description>
     </item>
     
     <item>
